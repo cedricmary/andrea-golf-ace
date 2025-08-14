@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Clock, Users, Zap } from "lucide-react";
-import andreaPortrait from "@/assets/andrea-portrait.jpg";
 
 const stats = [
   { label: "Years Playing", value: "3", icon: Clock },
@@ -21,8 +20,8 @@ const AboutSection = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-golf bg-gradient-to-br from-golf-green/20 to-championship-gold/20 p-1">
                 <img 
-                  src={andreaPortrait} 
-                  alt="Andrea - Golf Champion" 
+                  src="/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png" 
+                  alt="Andrea - Golf Champion on the golf course" 
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
