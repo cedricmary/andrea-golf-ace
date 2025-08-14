@@ -3,7 +3,7 @@ import { Trophy, Award, Target, Heart, User, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import heroImage from "/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png";
+import heroImage from "/lovable-uploads/d5ef895c-6587-499f-920e-d86e14c78162.png";
 
 const HeroSection = () => {
   const { t } = useLanguage();
