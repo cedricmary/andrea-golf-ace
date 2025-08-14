@@ -44,6 +44,7 @@ const translations = {
     'hero.subtitle': 'Young Golf Talent',
     'hero.description': 'Follow the journey of a promising young golfer making waves in the sport',
     'hero.meetAndrea': 'Meet Andrea',
+    'hero.meetTeam': 'Meet the Team',
     'hero.sponsor': 'Become a Sponsor',
     'hero.achievements': 'View Achievements',
 
@@ -165,6 +166,7 @@ const translations = {
     'hero.subtitle': 'Jeune Talent du Golf',
     'hero.description': 'Suivez le parcours d\'un jeune golfeur prometteur qui fait des vagues dans ce sport',
     'hero.meetAndrea': 'Rencontrer Andrea',
+    'hero.meetTeam': 'Rencontrer l\'Équipe',
     'hero.sponsor': 'Devenir Sponsor',
     'hero.achievements': 'Voir les Réalisations',
 

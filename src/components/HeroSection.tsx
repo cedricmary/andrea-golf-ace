@@ -96,7 +96,7 @@ const HeroSection = () => {
           </Button>
           <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToCoach}>
             <User className="w-5 h-5" />
-            Meet Coach Isabelle
+            {t('hero.meetTeam')}
           </Button>
           <Button variant="hero" size="lg" className="text-lg px-8" asChild>
             <Link to="/sponsor">
