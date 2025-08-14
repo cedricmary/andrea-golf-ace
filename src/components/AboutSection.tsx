@@ -1,19 +1,55 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Heart, Clock, Users, Zap, Trophy, Target } from "lucide-react";
+import { Heart, Clock, Users, Zap, Trophy, Target, Star, Calendar, Medal, Award, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutSection = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { label: "Years Playing", value: "4", icon: Clock },
-    { label: "Tournaments Played", value: "12+", icon: Users },
-    { label: "Top 3 Finishes", value: "8", icon: Zap },
-    { label: "Regional Ranking", value: "Top 5", icon: Heart },
-    { label: "Best Tournament Result", value: "1st", icon: Trophy },
-    { label: "Training Hours/Week", value: "15", icon: Target }
+    { 
+      label: t('about.stats.years'), 
+      value: "4", 
+      icon: Calendar,
+      color: "text-golf-green"
+    },
+    { 
+      label: t('about.stats.tournaments'), 
+      value: "12+", 
+      icon: Trophy,
+      color: "text-championship-gold" 
+    },
+    { 
+      label: t('about.stats.podiums'), 
+      value: "8", 
+      icon: Medal,
+      color: "text-trophy-bronze"
+    },
+    { 
+      label: t('about.stats.ranking'), 
+      value: t('about.stats.ranking.value'), 
+      icon: Target,
+      color: "text-golf-green"
+    },
+    { 
+      label: t('about.stats.best'), 
+      value: t('about.stats.best.value'), 
+      icon: Award,
+      color: "text-championship-gold"
+    },
+    { 
+      label: t('about.stats.training'), 
+      value: "15h", 
+      icon: TrendingUp,
+      color: "text-golf-green"
+    },
+    { 
+      label: t('about.stats.ffgolf'), 
+      value: t('about.stats.ffgolf.value'), 
+      icon: Star,
+      color: "text-championship-gold"
+    }
   ];
 
   return (
@@ -69,14 +105,14 @@ const AboutSection = () => {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="text-center shadow-card hover:shadow-golf transition-shadow">
+                <Card key={index} className="text-center shadow-card hover:shadow-golf transition-all hover:scale-105">
                   <CardHeader className="pb-3">
                     <div className="mx-auto p-3 bg-golf-green/10 rounded-full w-fit">
-                      <IconComponent className="w-6 h-6 text-golf-green" />
+                      <IconComponent className={`w-6 h-6 ${stat.color || 'text-golf-green'}`} />
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl md:text-3xl font-bold text-golf-green mb-2">
+                    <div className={`text-2xl md:text-3xl font-bold mb-2 ${stat.color || 'text-golf-green'}`}>
                       {stat.value}
                     </div>
                     <div className="text-xs md:text-sm text-muted-foreground">

@@ -70,6 +70,18 @@ const translations = {
     'about.training.desc': 'Trains 5 days a week with professional coaches to continuously improve technique and mental game.',
     'about.goals.title': 'Future Goals',
     'about.goals.desc': 'Aspiring to compete at national and international levels while maintaining academic excellence.',
+    
+    // Stats
+    'about.stats.years': 'Years Playing',
+    'about.stats.tournaments': 'Tournaments Played',
+    'about.stats.podiums': 'Top 3 Finishes',
+    'about.stats.ranking': 'Regional Ranking',
+    'about.stats.ranking.value': 'Top 5',
+    'about.stats.best': 'Best Tournament Result',
+    'about.stats.best.value': '1st',
+    'about.stats.training': 'Training Hours/Week',
+    'about.stats.ffgolf': 'FFGolf Merit System',
+    'about.stats.ffgolf.value': 'Registered',
 
     // Sponsorship Section
     'sponsorship.badge': 'Investment Opportunity',
@@ -171,6 +183,18 @@ const translations = {
     'about.training.desc': 'S\'entraîne 5 jours par semaine avec des entraîneurs professionnels pour améliorer continuellement sa technique et son jeu mental.',
     'about.goals.title': 'Objectifs Futurs',
     'about.goals.desc': 'Aspire à concourir aux niveaux national et international tout en maintenant l\'excellence académique.',
+    
+    // Stats
+    'about.stats.years': 'Années de Jeu',
+    'about.stats.tournaments': 'Tournois Joués',
+    'about.stats.podiums': 'Finitions Top 3',
+    'about.stats.ranking': 'Classement Régional',
+    'about.stats.ranking.value': 'Top 5',
+    'about.stats.best': 'Meilleur Résultat',
+    'about.stats.best.value': '1er',
+    'about.stats.training': 'Heures d\'Entraînement/Semaine',
+    'about.stats.ffgolf': 'Système de Mérite FFGolf',
+    'about.stats.ffgolf.value': 'Classé',
 
     // Sponsorship Section
     'sponsorship.badge': 'Opportunité d\'Investissement',
