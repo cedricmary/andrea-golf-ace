@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, Award, Target, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import heroImage from "@/assets/golf-course-hero.jpg";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -12,6 +16,11 @@ const HeroSection = () => {
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-golf-green/80 via-golf-green/60 to-transparent" />
+      </div>
+
+      {/* Language Switcher */}
+      <div className="absolute top-6 right-6 z-20">
+        <LanguageSwitcher />
       </div>
       
       {/* Content */}
@@ -23,21 +32,20 @@ const HeroSection = () => {
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-champion">
-          Andrea
+          {t('hero.title')}
           <span className="block text-championship-gold text-4xl md:text-5xl mt-2">
-            Golf Champion
+            {t('hero.subtitle')}
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
-          At just 10 years old, Andrea is making waves in the golf world with incredible skill, 
-          dedication, and a champion's spirit that inspires everyone on the course.
+          {t('hero.description')}
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="champion" size="lg" className="text-lg px-8">
             <Award className="w-5 h-5" />
-            View Achievements
+            {t('hero.achievements')}
           </Button>
           <Button variant="hero" size="lg" className="text-lg px-8">
             <Target className="w-5 h-5" />
@@ -46,7 +54,7 @@ const HeroSection = () => {
           <Button variant="hero" size="lg" className="text-lg px-8" asChild>
             <Link to="/sponsor">
               <Heart className="w-5 h-5" />
-              Become a Sponsor
+              {t('hero.sponsor')}
             </Link>
           </Button>
         </div>

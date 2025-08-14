@@ -18,63 +18,11 @@ import {
 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const sponsorshipTiers = [
-  {
-    id: "bronze",
-    name: "Bronze Supporter",
-    amount: 9000, // €90
-    icon: Target,
-    color: "bg-amber-100 text-amber-800",
-    features: [
-      "Recognition on social media",
-      "Thank you email from Andrea",
-      "Digital certificate of support"
-    ]
-  },
-  {
-    id: "silver", 
-    name: "Silver Champion",
-    amount: 22500, // €225
-    icon: Star,
-    color: "bg-gray-100 text-gray-800",
-    features: [
-      "All Bronze benefits",
-      "Name on tournament gear",
-      "Quarterly progress updates",
-      "Signed photo from Andrea"
-    ]
-  },
-  {
-    id: "gold",
-    name: "Gold Patron",
-    amount: 45000, // €450
-    icon: Crown,
-    color: "bg-yellow-100 text-yellow-800",
-    features: [
-      "All Silver benefits", 
-      "Logo on tournament apparel",
-      "VIP tournament updates",
-      "Meet & greet opportunity"
-    ]
-  },
-  {
-    id: "platinum",
-    name: "Platinum Elite",
-    amount: 90000, // €900
-    icon: Diamond,
-    color: "bg-purple-100 text-purple-800",
-    features: [
-      "All Gold benefits",
-      "Premier logo placement",
-      "Monthly video calls",
-      "Tournament attendance invite",
-      "Exclusive merchandise package"
-    ]
-  }
-];
 
 const SponsorshipSection = () => {
+  const { t } = useLanguage();
   const [selectedTier, setSelectedTier] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     email: "",
@@ -84,6 +32,60 @@ const SponsorshipSection = () => {
     message: ""
   });
   const [isLoading, setIsLoading] = useState(false);
+
+  const sponsorshipTiers = [
+    {
+      id: "bronze",
+      name: t('sponsorship.bronze'),
+      amount: 9000, // €90
+      icon: Target,
+      color: "bg-amber-100 text-amber-800",
+      features: [
+        t('sponsorship.bronze.social'),
+        t('sponsorship.bronze.updates'),
+        t('sponsorship.bronze.photos')
+      ]
+    },
+    {
+      id: "silver", 
+      name: t('sponsorship.silver'),
+      amount: 22500, // €225
+      icon: Star,
+      color: "bg-gray-100 text-gray-800",
+      features: [
+        "All Bronze benefits",
+        t('sponsorship.silver.website'),
+        t('sponsorship.silver.meet'),
+        t('sponsorship.silver.gear')
+      ]
+    },
+    {
+      id: "gold",
+      name: t('sponsorship.gold'),
+      amount: 45000, // €450
+      icon: Crown,
+      color: "bg-yellow-100 text-yellow-800",
+      features: [
+        "All Silver benefits", 
+        t('sponsorship.gold.apparel'),
+        t('sponsorship.gold.invite'),
+        t('sponsorship.gold.reports')
+      ]
+    },
+    {
+      id: "platinum",
+      name: t('sponsorship.platinum'),
+      amount: 90000, // €900
+      icon: Diamond,
+      color: "bg-purple-100 text-purple-800",
+      features: [
+        "All Gold benefits",
+        t('sponsorship.platinum.partnership'),
+        t('sponsorship.platinum.events'),
+        t('sponsorship.platinum.consultation')
+      ]
+    }
+  ];
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -138,14 +140,13 @@ const SponsorshipSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-championship-gold/10 text-championship-gold border-championship-gold/20">
-            Sponsor Andrea
+            {t('sponsorship.badge')}
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-champion">
-            Invest in a Champion
+            {t('sponsorship.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Help Andrea achieve her golf dreams and be part of her journey to championship success. 
-            Your investment supports training, equipment, tournaments, and her bright future in professional golf.
+            {t('sponsorship.description')}
           </p>
         </div>
 
@@ -229,13 +230,13 @@ const SponsorshipSection = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Heart className="w-5 h-5 text-championship-gold" />
-                Complete Your Sponsorship
+                {t('sponsorship.form.title')}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="fullName">Full Name *</Label>
+                  <Label htmlFor="fullName">{t('sponsorship.form.name')}</Label>
                   <Input
                     id="fullName"
                     value={formData.fullName}
@@ -244,7 +245,7 @@ const SponsorshipSection = () => {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="email">Email *</Label>
+                  <Label htmlFor="email">{t('sponsorship.form.email')}</Label>
                   <Input
                     id="email"
                     type="email"
@@ -257,7 +258,7 @@ const SponsorshipSection = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="companyName">Company Name</Label>
+                  <Label htmlFor="companyName">{t('sponsorship.form.company')}</Label>
                   <Input
                     id="companyName"
                     value={formData.companyName}
@@ -277,7 +278,7 @@ const SponsorshipSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="message">Message for Andrea</Label>
+                <Label htmlFor="message">{t('sponsorship.form.message')}</Label>
                 <Textarea
                   id="message"
                   value={formData.message}
@@ -294,7 +295,7 @@ const SponsorshipSection = () => {
                 onClick={handleSponsorshipSubmit}
                 disabled={isLoading}
               >
-                {isLoading ? "Processing..." : `Sponsor with ${sponsorshipTiers.find(t => t.id === selectedTier)?.name}`}
+                {isLoading ? "Processing..." : t('sponsorship.form.submit')}
                 <Heart className="w-5 h-5 ml-2" />
               </Button>
             </CardContent>

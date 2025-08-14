@@ -1,17 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 bg-gradient-to-br from-golf-green to-golf-green-dark">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-champion">
-            Get in Touch
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Want to learn more about Andrea's golf journey or discuss potential opportunities?
+            {t('contact.subtitle')}
           </p>
         </div>
         
@@ -68,7 +71,7 @@ const ContactSection = () => {
         <div className="text-center">
           <Button variant="champion" size="lg" className="text-lg px-8">
             <Mail className="w-5 h-5" />
-            Send Message
+            {t('contact.send')}
           </Button>
         </div>
       </div>

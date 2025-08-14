@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Clock, Users, Zap } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const stats = [
   { label: "Years Playing", value: "3", icon: Clock },
@@ -11,6 +12,8 @@ const stats = [
 ];
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 bg-gradient-card">
       <div className="container mx-auto px-6">
@@ -37,23 +40,17 @@ const AboutSection = () => {
               Meet the Champion
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-champion">
-              About Andrea
+              {t('about.title')}
             </h2>
             <div className="space-y-4 text-lg text-muted-foreground">
               <p>
-                Andrea discovered golf at age 7 and immediately fell in love with the sport. 
-                What started as weekend fun with family quickly transformed into a serious 
-                passion for competitive golf.
+                {t('about.passion.desc')}
               </p>
               <p>
-                Known for incredible focus, natural swing technique, and remarkable 
-                sportsmanship, Andrea has become an inspiration to other young golfers 
-                at the local club.
+                {t('about.training.desc')}
               </p>
               <p>
-                When not on the golf course, Andrea enjoys practicing putting in the 
-                backyard, watching professional tournaments, and helping younger kids 
-                learn the basics of golf.
+                {t('about.goals.desc')}
               </p>
             </div>
             

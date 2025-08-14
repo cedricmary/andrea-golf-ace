@@ -1,57 +1,61 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Medal, Award, Target, Calendar } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import trophyImage from "@/assets/championship-trophy.jpg";
 import medalsImage from "@/assets/golf-medals.jpg";
 
-const achievements = [
-  {
-    title: "Trophée Jeunes Golfeurs U10",
-    year: "2024",
-    description: "2nd place at the Regional Final - Boys category (Golf de St Donat)",
-    icon: Trophy,
-    color: "trophy-silver"
-  },
-  {
-    title: "Junior Club Champion",
-    year: "2024", 
-    description: "First place in the under-12 club championship tournament",
-    icon: Trophy,
-    color: "championship-gold"
-  },
-  {
-    title: "Regional Youth Cup",
-    year: "2024",
-    description: "Top 3 finish in the regional youth golf competition",
-    icon: Medal,
-    color: "trophy-bronze"
-  },
-  {
-    title: "Longest Drive Award",
-    year: "2023",
-    description: "Record holder for longest drive in junior category",
-    icon: Target,
-    color: "golf-green"
-  },
-  {
-    title: "Most Improved Player",
-    year: "2023",
-    description: "Outstanding progress and dedication to the sport",
-    icon: Award,
-    color: "championship-gold"
-  }
-];
 
 const AchievementsSection = () => {
+  const { t } = useLanguage();
+
+  const achievements = [
+    {
+      title: t('achievements.trophee2024'),
+      year: "2024",
+      description: t('achievements.trophee2024.desc'),
+      icon: Trophy,
+      color: "trophy-silver"
+    },
+    {
+      title: t('achievements.championship'),
+      year: "2024", 
+      description: t('achievements.championship.desc'),
+      icon: Trophy,
+      color: "championship-gold"
+    },
+    {
+      title: t('achievements.medal'),
+      year: "2024",
+      description: t('achievements.medal.desc'),
+      icon: Medal,
+      color: "trophy-bronze"
+    },
+    {
+      title: "Longest Drive Award",
+      year: "2023",
+      description: "Record holder for longest drive in junior category",
+      icon: Target,
+      color: "golf-green"
+    },
+    {
+      title: "Most Improved Player",
+      year: "2023",
+      description: "Outstanding progress and dedication to the sport",
+      icon: Award,
+      color: "championship-gold"
+    }
+  ];
+
   return (
     <section className="py-20 bg-gradient-to-br from-background to-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-champion">
-            Championship Achievements
+            {t('achievements.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A collection of Andrea's outstanding accomplishments in competitive golf
+            {t('achievements.subtitle')}
           </p>
         </div>
         
