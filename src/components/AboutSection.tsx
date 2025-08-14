@@ -94,16 +94,31 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-champion">
               {t('about.title')}
             </h2>
-            <div className="space-y-4 text-lg text-muted-foreground">
-              <p>
-                {t('about.passion.desc')}
-              </p>
-              <p>
-                {t('about.training.desc')}
-              </p>
-              <p>
-                {t('about.goals.desc')}
-              </p>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold text-foreground">{t('about.passion.title')}</h3>
+                <p>{t('about.passion.desc')}</p>
+              </div>
+              
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold text-foreground">{t('about.training.title')}</h3>
+                <p>{t('about.training.desc')}</p>
+              </div>
+              
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold text-foreground">{t('about.goals.title')}</h3>
+                <p>{t('about.goals.desc')}</p>
+              </div>
+              
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold text-foreground">{t('about.personality.title')}</h3>
+                <p>{t('about.personality.desc')}</p>
+              </div>
+              
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold text-foreground">{t('about.achievements.title')}</h3>
+                <p>{t('about.achievements.desc')}</p>
+              </div>
             </div>
             
             <div className="mt-8">

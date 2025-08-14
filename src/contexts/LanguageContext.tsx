@@ -65,11 +65,15 @@ const translations = {
     // About Section
     'about.title': 'About Andrea',
     'about.passion.title': 'Passion for Golf',
-    'about.passion.desc': 'Started playing at age 6 and quickly showed natural talent and dedication to the sport.',
+    'about.passion.desc': 'Andrea discovered golf at the tender age of 6, when his natural swing caught the attention of professionals at Golf de Luberon. What started as weekend family outings quickly evolved into a serious passion. His intuitive understanding of the game, combined with an unwavering dedication, has made him one of the most promising young talents in the PACA region.',
     'about.training.title': 'Dedicated Training',
-    'about.training.desc': 'Trains 5 days a week with professional coaches to continuously improve technique and mental game.',
-    'about.goals.title': 'Future Goals',
-    'about.goals.desc': 'Aspiring to compete at national and international levels while maintaining academic excellence.',
+    'about.training.desc': 'Andrea maintains a rigorous training schedule, dedicating 15 hours per week to perfecting his craft. Working with certified PGA professionals, he focuses on technical precision, mental fortitude, and strategic course management. His training regimen includes driving range sessions, short game practice, physical conditioning, and competitive match play to simulate tournament pressure.',
+    'about.goals.title': 'Future Aspirations',
+    'about.goals.desc': 'With his sights set on competing at the highest levels, Andrea aims to represent France in international youth competitions while maintaining his academic excellence. His dream is to earn a golf scholarship to a prestigious university and eventually compete on professional tours. He understands that success requires balancing athletic achievement with personal development and education.',
+    'about.personality.title': 'Character & Values',
+    'about.personality.desc': 'Beyond his athletic prowess, Andrea is known for his sportsmanship, humility, and positive attitude. He actively mentors younger players at his home club and participates in junior golf development programs. His coaches praise his work ethic, coachability, and natural leadership qualities that make him stand out both on and off the course.',
+    'about.achievements.title': 'Recent Highlights',
+    'about.achievements.desc': 'Andrea\'s consistent performance in regional tournaments has earned him recognition in the FFGolf merit system. His participation in Grand Prix events showcases his ability to compete against the best young players in France. Each tournament experience contributes to his growing confidence and competitive maturity.',
     
     // Stats
     'about.stats.years': 'Years Playing',
@@ -181,11 +185,15 @@ const translations = {
     // About Section
     'about.title': 'À Propos d\'Andrea',
     'about.passion.title': 'Passion pour le Golf',
-    'about.passion.desc': 'A commencé à jouer à 6 ans et a rapidement montré un talent naturel et une dévotion pour ce sport.',
+    'about.passion.desc': 'Andrea a découvert le golf à l\'âge tendre de 6 ans, quand son swing naturel a attiré l\'attention des professionnels au Golf de Luberon. Ce qui a commencé comme des sorties familiales de week-end a rapidement évolué vers une passion sérieuse. Sa compréhension intuitive du jeu, combinée à un dévouement inébranlable, en a fait l\'un des jeunes talents les plus prometteurs de la région PACA.',
     'about.training.title': 'Entraînement Dévoué',
-    'about.training.desc': 'S\'entraîne 5 jours par semaine avec des entraîneurs professionnels pour améliorer continuellement sa technique et son jeu mental.',
-    'about.goals.title': 'Objectifs Futurs',
-    'about.goals.desc': 'Aspire à concourir aux niveaux national et international tout en maintenant l\'excellence académique.',
+    'about.training.desc': 'Andrea maintient un programme d\'entraînement rigoureux, consacrant 15 heures par semaine à perfectionner son art. Travaillant avec des professionnels PGA certifiés, il se concentre sur la précision technique, la force mentale et la gestion stratégique du parcours. Son régime d\'entraînement comprend des séances au practice, la pratique du petit jeu, le conditionnement physique et le jeu compétitif pour simuler la pression des tournois.',
+    'about.goals.title': 'Aspirations Futures',
+    'about.goals.desc': 'Avec ses objectifs fixés sur la compétition aux plus hauts niveaux, Andrea vise à représenter la France dans les compétitions internationales jeunes tout en maintenant son excellence académique. Son rêve est d\'obtenir une bourse de golf dans une université prestigieuse et de concourir éventuellement sur les circuits professionnels. Il comprend que le succès nécessite d\'équilibrer la réussite sportive avec le développement personnel et l\'éducation.',
+    'about.personality.title': 'Caractère et Valeurs',
+    'about.personality.desc': 'Au-delà de ses prouesses athlétiques, Andrea est connu pour son esprit sportif, son humilité et son attitude positive. Il encadre activement les jeunes joueurs de son club local et participe aux programmes de développement du golf junior. Ses entraîneurs louent son éthique de travail, sa capacité d\'apprentissage et ses qualités de leadership naturelles qui le distinguent sur et en dehors du parcours.',
+    'about.achievements.title': 'Faits Marquants Récents',
+    'about.achievements.desc': 'La performance constante d\'Andrea dans les tournois régionaux lui a valu une reconnaissance dans le système de mérite FFGolf. Sa participation aux événements Grand Prix démontre sa capacité à concourir contre les meilleurs jeunes joueurs de France. Chaque expérience de tournoi contribue à sa confiance croissante et sa maturité compétitive.',
     
     // Stats
     'about.stats.years': 'Années de Jeu',
