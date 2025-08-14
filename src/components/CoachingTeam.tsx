@@ -10,28 +10,29 @@ const CoachingTeam = () => {
 
   const coaches = [
     {
-      id: "isabelle-boileau",
-      name: "Isabelle Boileau",
-      title: "PGA Professional & Personal Coach",
-      specialization: "Youth Development & Technical Training",
+      id: "isabelle-boineau",
+      name: "Isabelle Boineau",
+      title: "Professional Golfer & PGA Coach",
+      specialization: "Professional Tournament Experience & Youth Development",
       experience: "15+ years",
       location: "Golf de Luberon, PACA Region",
-      instagram: "@isabelle.boileau.golf",
-      email: "isabelle.boileau@golfluberon.com",
+      instagram: "@isabelle.boineau.golf",
+      email: "isabelle.boineau@golfluberon.com",
       website: "https://www.golfduluberon.com/",
       role: "Primary Coach",
-      briefDescription: "Professionnelle PGA certifiée spécialisée dans le développement des jeunes golfeurs avec 15+ ans d'expérience.",
+      image: "/src/assets/isabelle-boineau.jpg",
+      briefDescription: "Professionnelle golfeuse française célèbre, championne du Ladies European Tour et coach certifiée PGA.",
       qualifications: [
+        "Ladies European Tour Professional Player",
         "PGA France Certified Professional",
         "Youth Golf Development Specialist", 
-        "Mental Performance Coach Level 2",
-        "Biomechanics & Swing Analysis Certified"
+        "Tournament Winner - Scottish Open 2016"
       ],
       achievements: [
         {
-          title: "Regional Youth Coach of the Year",
-          year: "2023",
-          organization: "Ligue PACA",
+          title: "Ladies European Tour Winner",
+          year: "2016",
+          organization: "Scottish Open",
           icon: Trophy
         },
         {
@@ -48,14 +49,14 @@ const CoachingTeam = () => {
         }
       ],
       careerHighlights: [
-        "Former competitive player on Ladies European Tour qualifying events",
-        "Specialized training in youth golf development since 2010",
-        "Mentored over 50 junior golfers to regional and national success",
-        "Regular contributor to French golf coaching publications",
-        "Guest instructor at PGA France training seminars"
+        "Professional golfer on the Ladies European Tour",
+        "Winner of the 2016 Ladies Scottish Open",
+        "Multiple tournament appearances and professional experience",
+        "Transitioned to coaching to share professional tournament knowledge",
+        "Specialized in developing young talent with real-world professional insight"
       ],
-      coachingPhilosophy: "Every young golfer has unique potential. My role is to nurture their natural abilities while building a strong technical foundation and mental resilience that will serve them throughout their golf journey.",
-      partnershipDetails: "Andrea has been training under Isabelle's guidance since 2022, focusing on technical swing development, mental game & course management, tournament preparation, and physical conditioning."
+      coachingPhilosophy: "Having competed at the highest level of professional golf, I understand what it takes to succeed. My goal is to share this professional experience with young golfers, teaching them not just technique, but the mental fortitude and strategic thinking needed to excel in competitive golf.",
+      partnershipDetails: "Isabelle brings her professional tournament experience to Andrea's development, focusing on competitive mindset, tournament preparation, and the transition from junior to professional-level golf."
     },
     {
       id: "andrea-father",
