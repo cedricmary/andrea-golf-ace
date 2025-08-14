@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Medal, Award, Euro, MapPin, Calendar, ExternalLink } from "lucide-react";
+import { Trophy, Medal, Award, MapPin, Calendar, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const MedalCollection = () => {
@@ -14,7 +14,6 @@ const MedalCollection = () => {
       category: "MG (Minime Garçons)",
       location: "Golf d'Aix-Marseille",
       score: "177 (87+90)",
-      prize: "50€",
       medal: "Participation",
       medalColor: "trophy-bronze",
       link: "https://liguegolfpaca.org/grand-prix-jeunes-daix-marseille-trophee-roger-cotton-2024/",
@@ -27,7 +26,6 @@ const MedalCollection = () => {
       category: "U10 Garçons",
       location: "Golf de St Donat",
       score: "Score net 68",
-      prize: "150€",
       medal: "Argent",
       medalColor: "trophy-silver",
       link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u10-2024/",
@@ -40,7 +38,6 @@ const MedalCollection = () => {
       category: "MG",
       location: "Golf de Valgarde",
       score: "165 (82+83)",
-      prize: "75€",
       medal: "Top 5",
       medalColor: "golf-green",
       link: "https://liguegolfpaca.org/grand-prix-jeunes-de-valgarde-2024/",
@@ -53,7 +50,6 @@ const MedalCollection = () => {
       category: "Minime",
       location: "Golf de Luberon",
       score: "Net 69",
-      prize: "200€",
       medal: "Or",
       medalColor: "championship-gold",
       link: "https://liguegolfpaca.org/competitions/competitions-jeunes/",
@@ -66,7 +62,6 @@ const MedalCollection = () => {
       category: "U12",
       location: "Golf de Cannes-Mougins",
       score: "145 (72+73)",
-      prize: "100€",
       medal: "Bronze",
       medalColor: "trophy-bronze",
       link: "https://www.golfcannesmougins.com/",
@@ -79,7 +74,6 @@ const MedalCollection = () => {
       category: "Club Junior",
       location: "Golf de Luberon",
       score: "Net 67",
-      prize: "120€",
       medal: "Or",
       medalColor: "championship-gold",
       link: "https://www.golfduluberon.com/",
@@ -92,7 +86,6 @@ const MedalCollection = () => {
       category: "Benjamin",
       location: "Golf de Saint-Donat",
       score: "148 (75+73)",
-      prize: "125€",
       medal: "Argent",
       medalColor: "trophy-silver",
       link: "https://liguegolfpaca.org/grand-prix-de-saint-donat-2024/",
@@ -105,17 +98,12 @@ const MedalCollection = () => {
       category: "U10",
       location: "Golf de Valescure",
       score: "Net 70",
-      prize: "60€",
       medal: "Top 5",
       medalColor: "golf-green",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: false
     }
   ];
-
-  const totalPrizeMoney = tournaments.reduce((sum, tournament) => {
-    return sum + parseInt(tournament.prize.replace('€', ''));
-  }, 0);
 
   const medalCounts = {
     gold: tournaments.filter(t => t.medal === "Or").length,
@@ -144,15 +132,15 @@ const MedalCollection = () => {
             Detailed Results
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-champion">
-            Medal Collection & Prize Money
+            Medal Collection & Tournament Results
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Complete record of Andrea's top 3 finishes and tournament earnings
+            Complete record of Andrea's tournament finishes and achievements
           </p>
         </div>
 
         {/* Summary Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <Card className="shadow-golf text-center">
             <CardContent className="p-4">
               <Trophy className="w-8 h-8 text-championship-gold mx-auto mb-2" />
@@ -179,13 +167,6 @@ const MedalCollection = () => {
               <Award className="w-8 h-8 text-golf-green mx-auto mb-2" />
               <div className="text-2xl font-bold text-golf-green">{medalCounts.top5}</div>
               <div className="text-sm text-muted-foreground">Top 5 Finishes</div>
-            </CardContent>
-          </Card>
-          <Card className="shadow-golf text-center">
-            <CardContent className="p-4">
-              <Euro className="w-8 h-8 text-foreground mx-auto mb-2" />
-              <div className="text-2xl font-bold text-foreground">{totalPrizeMoney}€</div>
-              <div className="text-sm text-muted-foreground">Total Earnings</div>
             </CardContent>
           </Card>
         </div>
@@ -247,16 +228,10 @@ const MedalCollection = () => {
                       </div>
                     </div>
 
-                    {/* Score & Prize */}
+                    {/* Score */}
                     <div className="lg:col-span-4 text-right lg:text-left">
-                      <div className="text-lg font-semibold text-foreground mb-1">
+                      <div className="text-lg font-semibold text-foreground">
                         {tournament.score}
-                      </div>
-                      <div className="flex items-center gap-2 justify-end lg:justify-start">
-                        <Euro className="w-4 h-4 text-golf-green" />
-                        <span className="text-lg font-bold text-golf-green">
-                          {tournament.prize}
-                        </span>
                       </div>
                     </div>
                   </div>
