@@ -98,7 +98,7 @@ const HeroSection = () => {
             variant="hero" 
             size="lg" 
             className="text-lg px-8"
-            onClick={() => window.open('https://www.golfduluberon.com/', '_blank')}
+            onClick={() => document.getElementById('my-club')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <MapPin className="w-5 h-5" />
             {t('hero.myClub')}

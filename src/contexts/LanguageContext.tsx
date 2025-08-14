@@ -159,6 +159,20 @@ const translations = {
 
     // Language Switcher
     'language.switch': 'Language',
+
+    // My Club Section
+    'club.badge': 'Home Club',
+    'club.title': 'Golf du Luberon',
+    'club.description': 'Discover the magnificent 18-hole course in the heart of Provence where Andrea trains and competes',
+    'club.overview.title': 'About the Club',
+    'club.overview.description': 'Located in Pierrevert, just 6km from Manosque, Golf du Luberon offers a stunning 18-hole Par 72 course of 5621 meters. Founded in 1988, it sits in the heart of the Luberon Natural Regional Park, providing breathtaking views of the Provençal countryside.',
+    'club.management.title': 'Club Management',
+    'club.management.member.name': 'Beru Family',
+    'club.management.member.role': 'Club Management',
+    'club.management.member.description': 'Dedicated to maintaining the highest standards of golf excellence and hospitality in the beautiful Luberon region.',
+    'club.course.holes': 'Holes',
+    'club.course.par': 'Course Par',
+    'club.course.length': 'Total Length',
   },
   fr: {
     // Hero Section
@@ -282,5 +296,19 @@ const translations = {
 
     // Language Switcher
     'language.switch': 'Langue',
+
+    // My Club Section
+    'club.badge': 'Club de Base',
+    'club.title': 'Golf du Luberon',
+    'club.description': 'Découvrez le magnifique parcours 18 trous au cœur de la Provence où Andrea s\'entraîne et participe aux compétitions',
+    'club.overview.title': 'À propos du Club',
+    'club.overview.description': 'Situé à Pierrevert, à seulement 6km de Manosque, le Golf du Luberon offre un superbe parcours 18 trous Par 72 de 5621 mètres. Fondé en 1988, il se trouve au cœur du Parc Naturel Régional du Luberon, offrant des vues imprenables sur la campagne provençale.',
+    'club.management.title': 'Direction du Club',
+    'club.management.member.name': 'Famille Beru',
+    'club.management.member.role': 'Direction du Club',
+    'club.management.member.description': 'Dédiée à maintenir les plus hauts standards d\'excellence du golf et d\'hospitalité dans la belle région du Luberon.',
+    'club.course.holes': 'Trous',
+    'club.course.par': 'Par du Parcours',
+    'club.course.length': 'Longueur Totale',
   }
 };
