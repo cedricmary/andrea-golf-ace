@@ -65,7 +65,7 @@ const CoachingTeam = () => {
        specialization: "Swing Technique & Mental Game",
        experience: "12+ years",
        location: "Golf de Luberon, PACA Region",
-       instagram: "@stephanie.paloumet.golf",
+       instagram: "https://www.instagram.com/stephanie_paloumet/",
        email: "stephanie.paloumet@golfluberon.com",
        website: "https://www.golfduluberon.com/",
        role: "Technique Coach",
