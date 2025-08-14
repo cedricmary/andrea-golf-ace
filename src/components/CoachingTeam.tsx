@@ -57,8 +57,57 @@ const CoachingTeam = () => {
       ],
       coachingPhilosophy: "Having competed at the highest level of professional golf, I understand what it takes to succeed. My goal is to share this professional experience with young golfers, teaching them not just technique, but the mental fortitude and strategic thinking needed to excel in competitive golf.",
       partnershipDetails: "Isabelle brings her professional tournament experience to Andrea's development, focusing on competitive mindset, tournament preparation, and the transition from junior to professional-level golf."
-    },
-    {
+     },
+     {
+       id: "stephanie-paloumet",
+       name: "Stephanie Paloumet",
+       title: "Golf Instructor & Technique Specialist",
+       specialization: "Swing Technique & Mental Game",
+       experience: "12+ years",
+       location: "Golf de Luberon, PACA Region",
+       instagram: "@stephanie.paloumet.golf",
+       email: "stephanie.paloumet@golfluberon.com",
+       website: "https://www.golfduluberon.com/",
+       role: "Technique Coach",
+       image: "/src/assets/stephanie-paloumet.jpg",
+       briefDescription: "Instructrice de golf expérimentée spécialisée dans la technique du swing et le mental du jeu.",
+       qualifications: [
+         "PGA France Certified Professional",
+         "Swing Analysis Specialist",
+         "Sports Psychology in Golf",
+         "Youth Development Coach"
+       ],
+       achievements: [
+         {
+           title: "PGA Teaching Professional Certification",
+           year: "2012",
+           organization: "PGA France",
+           icon: Award
+         },
+         {
+           title: "Youth Coach of the Year",
+           year: "2022",
+           organization: "Ligue PACA Golf",
+           icon: Trophy
+         },
+         {
+           title: "Developed 25+ Junior Players",
+           year: "2012-2024",
+           organization: "Golf de Luberon",
+           icon: Target
+         }
+       ],
+       careerHighlights: [
+         "Specialized in swing technique analysis and improvement",
+         "Expert in sports psychology applications for golf",
+         "Developed comprehensive youth training programs",
+         "Mentor for junior golfers in competitive environments",
+         "Focus on building confidence and mental resilience"
+       ],
+       coachingPhilosophy: "I believe that technical excellence must be balanced with mental strength. My approach focuses on building solid fundamentals while developing the psychological tools needed for competitive success.",
+       partnershipDetails: "Stephanie works closely with Andrea on refining swing mechanics and developing mental strategies for tournament play, complementing the professional experience provided by Isabelle."
+     },
+     {
       id: "andrea-father",
       name: "Andrea's Father",
       title: "Personal Support & Motivation Coach",
@@ -103,55 +152,7 @@ const CoachingTeam = () => {
       ],
       coachingPhilosophy: "Being a golf parent means being Andrea's biggest supporter, his safe harbor during tough rounds, and his celebration partner during victories. My role is to provide unconditional love and support while letting the professionals handle the technical training.",
       partnershipDetails: "As Andrea's father, I'm there for every practice, every tournament, and every milestone. My focus is on emotional support, logistics coordination, and ensuring Andrea maintains his love for the game while pursuing excellence."
-    },
-    {
-      id: "stephanie-paloumet",
-      name: "Stéphanie Paloumet",
-      title: "Golf Performance Specialist",
-      specialization: "Mental Game & Competition Psychology",
-      experience: "12+ years",
-      location: "PACA Region",
-      instagram: "@stephanie.paloumet.golf",
-      email: "stephanie.paloumet@golfcoach.fr",
-      website: "https://www.stephanie-paloumet-golf.fr/",
-      role: "Mental Performance Coach",
-      briefDescription: "Spécialiste en psychologie de la compétition et préparation mentale pour jeunes athlètes.",
-      qualifications: [
-        "Certified Golf Psychology Coach",
-        "Competition Mental Training Specialist",
-        "Youth Sports Psychology Certification",
-        "Performance Analysis Expert"
-      ],
-      achievements: [
-        {
-          title: "Mental Performance Coach Certification",
-          year: "2012",
-          organization: "European Golf Psychology Association",
-          icon: Award
-        },
-        {
-          title: "Youth Psychology Specialist",
-          year: "2015",
-          organization: "Sports Psychology Institute France",
-          icon: Target
-        },
-        {
-          title: "Competition Mindset Expert",
-          year: "2018",
-          organization: "French Golf Federation",
-          icon: Trophy
-        }
-      ],
-      careerHighlights: [
-        "Specialized in young athlete mental preparation and performance optimization",
-        "Developed mental training programs for junior golf champions",
-        "Expert in competition stress management and focus techniques",
-        "Regular speaker at golf psychology seminars across France",
-        "Author of articles on mental game for golf publications"
-      ],
-      coachingPhilosophy: "The mental game is what separates good golfers from great champions. I help young athletes develop the psychological tools to perform under pressure and maintain confidence through every challenge.",
-      partnershipDetails: "Stéphanie works with Andrea on mental preparation, competition psychology, stress management techniques, and confidence building for tournament play."
-    }
+     }
   ];
 
   return (
