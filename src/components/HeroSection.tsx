@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Trophy, Award, Target, Heart } from "lucide-react";
+import { Trophy, Award, Target, Heart, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -18,6 +18,19 @@ const HeroSection = () => {
       });
     } else {
       console.warn('Stats section not found');
+    }
+  };
+
+  const scrollToCoach = () => {
+    const coachSection = document.querySelector('[data-section="coaching"]');
+    if (coachSection) {
+      coachSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    } else {
+      console.warn('Coaching section not found');
     }
   };
 
@@ -63,6 +76,10 @@ const HeroSection = () => {
           <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToStats}>
             <Target className="w-5 h-5" />
             See Stats
+          </Button>
+          <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToCoach}>
+            <User className="w-5 h-5" />
+            Meet Coach Isabelle
           </Button>
           <Button variant="hero" size="lg" className="text-lg px-8" asChild>
             <Link to="/sponsor">

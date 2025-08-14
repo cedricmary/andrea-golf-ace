@@ -52,7 +52,7 @@ const CoachingTeam = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-card">
+    <section className="py-20 bg-gradient-card" data-section="coaching">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-golf-green/10 text-golf-green border-golf-green/20">
