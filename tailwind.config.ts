@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'golf-green': {
+					DEFAULT: 'hsl(var(--golf-green))',
+					light: 'hsl(var(--golf-green-light))',
+					dark: 'hsl(var(--golf-green-dark))'
+				},
+				'championship-gold': {
+					DEFAULT: 'hsl(var(--championship-gold))',
+					light: 'hsl(var(--championship-gold-light))'
+				},
+				'trophy-bronze': 'hsl(var(--trophy-bronze))',
+				'sky-blue': 'hsl(var(--sky-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +78,23 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-trophy': 'var(--gradient-trophy)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'golf': 'var(--shadow-golf)',
+				'trophy': 'var(--shadow-trophy)',
+				'card': 'var(--shadow-card)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
+			},
+			fontFamily: {
+				'champion': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
