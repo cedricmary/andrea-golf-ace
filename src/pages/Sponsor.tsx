@@ -1,7 +1,9 @@
 import SponsorshipSection from "@/components/SponsorshipSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Target, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Trophy, Target, Star, Home } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -10,6 +12,16 @@ const Sponsor = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Navigation */}
+      <div className="absolute top-6 left-6 z-20">
+        <Button variant="outline" size="sm" asChild className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-white">
+          <Link to="/">
+            <Home className="h-4 w-4 mr-2" />
+            {t('success.home')}
+          </Link>
+        </Button>
+      </div>
+
       {/* Language Switcher */}
       <div className="absolute top-6 right-6 z-20">
         <LanguageSwitcher />
