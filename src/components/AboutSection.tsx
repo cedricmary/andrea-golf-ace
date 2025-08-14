@@ -52,6 +52,12 @@ const AboutSection = () => {
       link: "https://pages.ffgolf.org/merite/jeunes/messieurs"
     },
     { 
+      label: t('about.stats.grandprix'), 
+      value: "5+", 
+      icon: Trophy,
+      color: "text-championship-gold"
+    },
+    { 
       label: t('about.stats.club'), 
       value: t('about.stats.club.value'), 
       icon: MapPin,
