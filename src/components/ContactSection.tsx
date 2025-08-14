@@ -43,7 +43,10 @@ const ContactSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-center">
+          <Card 
+            className="bg-white/10 backdrop-blur-sm border-white/20 text-center cursor-pointer hover:bg-white/15 transition-colors"
+            onClick={() => window.open('https://www.golfduluberon.com/', '_blank')}
+          >
             <CardHeader>
               <div className="mx-auto p-3 bg-championship-gold/20 rounded-full w-fit">
                 <MapPin className="w-6 h-6 text-championship-gold" />
@@ -52,6 +55,9 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent>
               <p className="text-white/80">Golf de Luberon</p>
+              <p className="text-xs text-championship-gold mt-1 opacity-80">
+                Click to visit website
+              </p>
             </CardContent>
           </Card>
           

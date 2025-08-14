@@ -54,7 +54,8 @@ const AboutSection = () => {
       label: t('about.stats.club'), 
       value: t('about.stats.club.value'), 
       icon: MapPin,
-      color: "text-golf-green"
+      color: "text-golf-green",
+      link: "https://www.golfduluberon.com/"
     }
   ];
 
@@ -111,7 +112,15 @@ const AboutSection = () => {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
-                <Card key={index} className="text-center shadow-card hover:shadow-golf transition-all hover:scale-105">
+                <Card 
+                  key={index} 
+                  className={`text-center shadow-card hover:shadow-golf transition-all hover:scale-105 ${
+                    stat.link ? 'cursor-pointer' : ''
+                  }`}
+                  {...(stat.link && {
+                    onClick: () => window.open(stat.link, '_blank'),
+                  })}
+                >
                   <CardHeader className="pb-3">
                     <div className="mx-auto p-3 bg-golf-green/10 rounded-full w-fit">
                       <IconComponent className={`w-6 h-6 ${stat.color || 'text-golf-green'}`} />
@@ -124,6 +133,11 @@ const AboutSection = () => {
                     <div className="text-xs md:text-sm text-muted-foreground">
                       {stat.label}
                     </div>
+                    {stat.link && (
+                      <div className="text-xs text-golf-green mt-1 opacity-60">
+                        Click to visit website
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               );
