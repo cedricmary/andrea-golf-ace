@@ -39,9 +39,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Golf championship theme colors */
-    --golf-green: 142 76% 36%;
-    --golf-green-light: 142 50% 60%;
-    --golf-green-dark: 142 85% 25%;
+    --golf-green: 142 50% 50%;
+    --golf-green-light: 142 40% 70%;
+    --golf-green-dark: 142 60% 35%;
     --championship-gold: 45 100% 60%;
     --championship-gold-light: 45 100% 75%;
     --trophy-silver: 220 8% 55%;
