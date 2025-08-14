@@ -6,8 +6,15 @@ import medalsImage from "@/assets/golf-medals.jpg";
 
 const achievements = [
   {
-    title: "Junior Club Champion",
+    title: "Trophée Jeunes Golfeurs U10",
     year: "2024",
+    description: "2nd place at the Regional Final - Boys category (Golf de St Donat)",
+    icon: Trophy,
+    color: "trophy-silver"
+  },
+  {
+    title: "Junior Club Champion",
+    year: "2024", 
     description: "First place in the under-12 club championship tournament",
     icon: Trophy,
     color: "championship-gold"

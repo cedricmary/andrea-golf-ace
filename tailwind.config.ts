@@ -61,6 +61,7 @@ export default {
 					DEFAULT: 'hsl(var(--championship-gold))',
 					light: 'hsl(var(--championship-gold-light))'
 				},
+				'trophy-silver': 'hsl(var(--trophy-silver))',
 				'trophy-bronze': 'hsl(var(--trophy-bronze))',
 				'sky-blue': 'hsl(var(--sky-blue))',
 				sidebar: {
