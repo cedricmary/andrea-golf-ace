@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Heart, Clock, Users, Zap, Trophy, Target, Star, Calendar, Medal, Award, TrendingUp } from "lucide-react";
+import { Heart, Clock, Users, Zap, Trophy, Target, Star, Calendar, Medal, Award, TrendingUp, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AboutSection = () => {
@@ -49,6 +49,12 @@ const AboutSection = () => {
       value: t('about.stats.ffgolf.value'), 
       icon: Star,
       color: "text-championship-gold"
+    },
+    { 
+      label: t('about.stats.club'), 
+      value: t('about.stats.club.value'), 
+      icon: MapPin,
+      color: "text-golf-green"
     }
   ];
 

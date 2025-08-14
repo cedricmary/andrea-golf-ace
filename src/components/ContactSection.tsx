@@ -51,7 +51,7 @@ const ContactSection = () => {
               <CardTitle className="text-white">Location</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-white/80">Local Golf Club</p>
+              <p className="text-white/80">Golf de Luberon</p>
             </CardContent>
           </Card>
           

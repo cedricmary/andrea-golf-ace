@@ -82,6 +82,8 @@ const translations = {
     'about.stats.training': 'Training Hours/Week',
     'about.stats.ffgolf': 'FFGolf Merit System',
     'about.stats.ffgolf.value': 'Registered',
+    'about.stats.club': 'Home Club',
+    'about.stats.club.value': 'Golf de Luberon',
 
     // Sponsorship Section
     'sponsorship.badge': 'Investment Opportunity',
@@ -195,6 +197,8 @@ const translations = {
     'about.stats.training': 'Heures d\'Entraînement/Semaine',
     'about.stats.ffgolf': 'Système de Mérite FFGolf',
     'about.stats.ffgolf.value': 'Classé',
+    'about.stats.club': 'Club Local',
+    'about.stats.club.value': 'Golf de Luberon',
 
     // Sponsorship Section
     'sponsorship.badge': 'Opportunité d\'Investissement',
