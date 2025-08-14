@@ -48,7 +48,8 @@ const AboutSection = () => {
       label: t('about.stats.ffgolf'), 
       value: t('about.stats.ffgolf.value'), 
       icon: Star,
-      color: "text-championship-gold"
+      color: "text-championship-gold",
+      link: "https://pages.ffgolf.org/merite/jeunes/messieurs"
     },
     { 
       label: t('about.stats.club'), 
