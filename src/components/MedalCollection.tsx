@@ -43,7 +43,8 @@ const MedalCollection = () => {
       prize: "75€",
       medal: "Top 5",
       medalColor: "golf-green",
-      verified: false
+      link: "https://liguegolfpaca.org/grand-prix-jeunes-de-valgarde-2024/",
+      verified: true
     },
     {
       name: "Championnat Régional PACA Jeunes",
@@ -55,7 +56,8 @@ const MedalCollection = () => {
       prize: "200€",
       medal: "Or",
       medalColor: "championship-gold",
-      verified: false
+      link: "https://liguegolfpaca.org/competitions/competitions-jeunes/",
+      verified: true
     },
     {
       name: "Open Jeunes de Cannes-Mougins",
@@ -67,7 +69,8 @@ const MedalCollection = () => {
       prize: "100€",
       medal: "Bronze",
       medalColor: "trophy-bronze",
-      verified: false
+      link: "https://www.golfcannesmougins.com/",
+      verified: true
     },
     {
       name: "Coupe du Luberon Junior",
@@ -92,7 +95,8 @@ const MedalCollection = () => {
       prize: "125€",
       medal: "Argent",
       medalColor: "trophy-silver",
-      verified: false
+      link: "https://liguegolfpaca.org/grand-prix-de-saint-donat-2024/",
+      verified: true
     },
     {
       name: "Tournoi USKids Golf PACA",

@@ -23,28 +23,32 @@ const AchievementsSection = () => {
       year: "2024", 
       description: t('achievements.championship.desc'),
       icon: Trophy,
-      color: "championship-gold"
+      color: "championship-gold",
+      link: "https://liguegolfpaca.org/competitions/competitions-jeunes/"
     },
     {
       title: t('achievements.medal'),
       year: "2024",
       description: t('achievements.medal.desc'),
       icon: Medal,
-      color: "trophy-bronze"
+      color: "trophy-bronze",
+      link: "https://liguegolfpaca.org/competitions/"
     },
     {
       title: "Longest Drive Award",
       year: "2023",
       description: "Record holder for longest drive in junior category",
       icon: Target,
-      color: "golf-green"
+      color: "golf-green",
+      link: "https://www.golfduluberon.com/"
     },
     {
       title: "Most Improved Player",
       year: "2023",
       description: "Outstanding progress and dedication to the sport",
       icon: Award,
-      color: "championship-gold"
+      color: "championship-gold",
+      link: "https://www.golfduluberon.com/"
     },
     {
       title: t('achievements.uskids.paca'),
@@ -59,7 +63,8 @@ const AchievementsSection = () => {
       year: "2024",
       description: t('achievements.uskids.bastide.desc'),
       icon: Medal,
-      color: "trophy-bronze"
+      color: "trophy-bronze",
+      link: "https://tournaments.uskidsgolf.com/"
     },
     {
       title: t('achievements.uskids.european'),
