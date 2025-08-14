@@ -8,6 +8,7 @@ const GallerySection = () => {
   const { t } = useLanguage();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [isFullGalleryOpen, setIsFullGalleryOpen] = useState(false);
 
   const galleryImages = [
     {
@@ -53,6 +54,14 @@ const GallerySection = () => {
     setCurrentImageIndex(index);
   };
 
+  const openFullGallery = () => {
+    setIsFullGalleryOpen(true);
+  };
+
+  const closeFullGallery = () => {
+    setIsFullGalleryOpen(false);
+  };
+
   return (
     <section className="py-20 bg-gradient-to-b from-white to-golf-sand/10">
       <div className="container mx-auto px-6">
@@ -63,9 +72,20 @@ const GallerySection = () => {
               Gallery
             </h2>
           </div>
-          <p className="text-xl text-golf-navy/70 max-w-2xl mx-auto">
+          <p className="text-xl text-golf-navy/70 max-w-2xl mx-auto mb-6">
             Capturing moments from Andrea's golf journey
           </p>
+          <div className="flex justify-center">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              onClick={openFullGallery}
+              className="bg-golf-green/10 border-golf-green text-golf-green hover:bg-golf-green hover:text-white transition-all"
+            >
+              <Camera className="w-5 h-5 mr-2" />
+              View All Photos
+            </Button>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -160,6 +180,95 @@ const GallerySection = () => {
                     onClick={() => goToImage(index)}
                   />
                 ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Full Gallery View */}
+        {isFullGalleryOpen && (
+          <div className="fixed inset-0 bg-black/95 z-50 overflow-auto animate-fade-in">
+            <div className="min-h-screen p-4">
+              {/* Header */}
+              <div className="sticky top-0 bg-black/80 backdrop-blur-sm z-10 p-4 mb-6">
+                <div className="flex items-center justify-between max-w-7xl mx-auto">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white font-champion">
+                    Complete Gallery - Andrea's Golf Journey
+                  </h2>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-white hover:bg-white/20"
+                    onClick={closeFullGallery}
+                  >
+                    <X className="w-6 h-6" />
+                  </Button>
+                </div>
+              </div>
+
+              {/* All Photos Grid */}
+              <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {galleryImages.map((image, index) => (
+                    <div 
+                      key={index} 
+                      className="group relative aspect-[4/3] overflow-hidden rounded-lg cursor-pointer"
+                      onClick={() => {
+                        closeFullGallery();
+                        setTimeout(() => openLightbox(index), 100);
+                      }}
+                    >
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <p className="text-sm font-medium">{image.caption}</p>
+                        <p className="text-xs opacity-80 mt-1">Click to view in detail</p>
+                      </div>
+                      <div className="absolute top-2 right-2 bg-black/30 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Camera className="w-4 h-4 text-white" />
+                      </div>
+                      {/* Image number badge */}
+                      <div className="absolute top-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full">
+                        {index + 1}
+                      </div>
+                    </div>
+                  ))}
+                  
+                  {/* Placeholder images for upcoming photos */}
+                  {[...Array(8)].map((_, index) => (
+                    <div 
+                      key={`placeholder-${index}`} 
+                      className="aspect-[4/3] bg-gradient-to-br from-golf-green/20 to-golf-sand/20 border-2 border-dashed border-golf-green/40 rounded-lg flex items-center justify-center group hover:border-golf-green/60 transition-colors"
+                    >
+                      <div className="text-center text-golf-navy/60 group-hover:text-golf-green/80 transition-colors">
+                        <Camera className="w-8 h-8 mx-auto mb-2" />
+                        <p className="text-sm font-medium">Photo {galleryImages.length + index + 1}</p>
+                        <p className="text-xs">Coming Soon</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Gallery Stats */}
+                <div className="mt-12 text-center text-white/80">
+                  <div className="flex items-center justify-center gap-8 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Camera className="w-4 h-4" />
+                      <span>{galleryImages.length} Photos Available</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span>•</span>
+                      <span>8 More Coming Soon</span>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-xs opacity-60">
+                    Click any photo to view in detail • Scroll to see all images
+                  </p>
+                </div>
               </div>
             </div>
           </div>
