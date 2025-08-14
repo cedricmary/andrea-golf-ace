@@ -63,6 +63,7 @@ const CoachingTeam = () => {
       experience: "4+ years",
       location: "PACA Region",
       role: "Family Support",
+      image: "/lovable-uploads/cd9b2f1d-ef39-4be1-91aa-b3c4370e0995.png",
       qualifications: [
         "Dedicated Golf Parent",
         "Tournament Travel Coordinator", 
@@ -171,9 +172,19 @@ const CoachingTeam = () => {
                 <Card className="shadow-championship">
                   <CardHeader>
                     <div className="flex items-start gap-4">
-                      <div className="p-4 bg-golf-green/10 rounded-full">
-                        <User className="w-8 h-8 text-golf-green" />
-                      </div>
+                      {coach.image ? (
+                        <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-golf-green/20">
+                          <img 
+                            src={coach.image} 
+                            alt={`${coach.name} with Andrea`}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      ) : (
+                        <div className="p-4 bg-golf-green/10 rounded-full">
+                          <User className="w-8 h-8 text-golf-green" />
+                        </div>
+                      )}
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
                           <CardTitle className="text-2xl text-foreground">
