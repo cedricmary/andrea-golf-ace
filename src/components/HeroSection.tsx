@@ -3,7 +3,7 @@ import { Trophy, Award, Target, Heart, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import heroImage from "@/assets/golf-course-hero.jpg";
+import heroImage from "/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png";
 
 const HeroSection = () => {
   const { t } = useLanguage();
