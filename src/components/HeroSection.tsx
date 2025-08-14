@@ -47,6 +47,19 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToAchievements = () => {
+    const achievementsSection = document.querySelector('[data-section="achievements"]');
+    if (achievementsSection) {
+      achievementsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    } else {
+      console.warn('Achievements section not found');
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -86,7 +99,7 @@ const HeroSection = () => {
             <User className="w-5 h-5" />
             {t('hero.meetAndrea')}
           </Button>
-          <Button variant="hero" size="lg" className="text-lg px-8">
+          <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToAchievements}>
             <Award className="w-5 h-5" />
             {t('hero.achievements')}
           </Button>
