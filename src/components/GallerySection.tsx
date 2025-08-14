@@ -1,9 +1,13 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Camera } from "lucide-react";
+import { Camera, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useState } from "react";
 
 const GallerySection = () => {
   const { t } = useLanguage();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const galleryImages = [
     {
@@ -20,8 +24,34 @@ const GallerySection = () => {
       src: "/lovable-uploads/69b1010b-4dcd-4b60-ad2d-dd87b4208200.png",
       alt: "Andrea with fellow young golfers on the course",
       caption: "Team spirit - Andrea with fellow competitors at a youth tournament"
+    },
+    {
+      src: "/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png",
+      alt: "Andrea in action during tournament play",
+      caption: "Tournament focus - Andrea concentrating during competitive play"
     }
   ];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setIsLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setIsLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
+
+  const goToImage = (index: number) => {
+    setCurrentImageIndex(index);
+  };
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-golf-sand/10">
@@ -38,9 +68,13 @@ const GallerySection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {galleryImages.map((image, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <Card 
+              key={index} 
+              className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
+              onClick={() => openLightbox(index)}
+            >
               <div className="aspect-[4/3] relative overflow-hidden">
                 <img 
                   src={image.src} 
@@ -51,11 +85,86 @@ const GallerySection = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full hover:translate-y-0 transition-transform duration-300">
                   <p className="text-sm font-medium">{image.caption}</p>
                 </div>
+                <div className="absolute top-2 right-2 bg-black/30 rounded-full p-2 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <Camera className="w-4 h-4 text-white" />
+                </div>
               </div>
             </Card>
           ))}
         </div>
         
+        {/* Lightbox Modal */}
+        {isLightboxOpen && (
+          <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center animate-fade-in">
+            <div className="relative w-full h-full flex items-center justify-center p-4">
+              {/* Close Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute top-4 right-4 z-10 text-white hover:bg-white/20"
+                onClick={closeLightbox}
+              >
+                <X className="w-6 h-6" />
+              </Button>
+
+              {/* Previous Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white hover:bg-white/20"
+                onClick={prevImage}
+              >
+                <ChevronLeft className="w-8 h-8" />
+              </Button>
+
+              {/* Next Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white hover:bg-white/20"
+                onClick={nextImage}
+              >
+                <ChevronRight className="w-8 h-8" />
+              </Button>
+
+              {/* Main Image */}
+              <div className="max-w-5xl max-h-[80vh] relative animate-scale-in">
+                <img
+                  src={galleryImages[currentImageIndex].src}
+                  alt={galleryImages[currentImageIndex].alt}
+                  className="w-full h-full object-contain"
+                  onClick={nextImage}
+                />
+                
+                {/* Image Caption */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                  <p className="text-white text-lg font-medium text-center">
+                    {galleryImages[currentImageIndex].caption}
+                  </p>
+                  <p className="text-white/70 text-sm text-center mt-2">
+                    {currentImageIndex + 1} / {galleryImages.length}
+                  </p>
+                </div>
+              </div>
+
+              {/* Thumbnail Navigation */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {galleryImages.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                      index === currentImageIndex 
+                        ? 'bg-white scale-125' 
+                        : 'bg-white/50 hover:bg-white/80'
+                    }`}
+                    onClick={() => goToImage(index)}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Placeholder for more images */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
           {[...Array(3)].map((_, index) => (
