@@ -34,6 +34,19 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector('[data-section="about"]');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    } else {
+      console.warn('About section not found');
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -69,7 +82,11 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="champion" size="lg" className="text-lg px-8">
+          <Button variant="champion" size="lg" className="text-lg px-8" onClick={scrollToAbout}>
+            <User className="w-5 h-5" />
+            {t('hero.meetAndrea')}
+          </Button>
+          <Button variant="hero" size="lg" className="text-lg px-8">
             <Award className="w-5 h-5" />
             {t('hero.achievements')}
           </Button>
