@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Trophy, Award, Target, Heart, User } from "lucide-react";
+import { Trophy, Award, Target, Heart, User, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -93,6 +93,15 @@ const HeroSection = () => {
           <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToCoach}>
             <User className="w-5 h-5" />
             {t('hero.meetTeam')}
+          </Button>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="text-lg px-8"
+            onClick={() => window.open('https://www.golfduluberon.com/', '_blank')}
+          >
+            <MapPin className="w-5 h-5" />
+            {t('hero.myClub')}
           </Button>
           <Button variant="hero" size="lg" className="text-lg px-8" asChild>
             <Link to="/sponsor">
