@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Clock, Users, Zap } from "lucide-react";
+import andreaPortrait from "@/assets/andrea-portrait.jpg";
 
 const stats = [
   { label: "Years Playing", value: "3", icon: Clock },
@@ -15,8 +16,24 @@ const AboutSection = () => {
     <section className="py-20 bg-gradient-card">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Andrea's Photo */}
+          <div className="order-2 lg:order-1">
+            <div className="relative">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-golf bg-gradient-to-br from-golf-green/20 to-championship-gold/20 p-1">
+                <img 
+                  src={andreaPortrait} 
+                  alt="Andrea - Golf Champion" 
+                  className="w-full h-full object-cover rounded-xl"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-championship-gold text-golf-green p-4 rounded-full shadow-lg">
+                <Heart className="w-6 h-6" />
+              </div>
+            </div>
+          </div>
+          
           {/* Content */}
-          <div>
+          <div className="order-1 lg:order-2">
             <Badge className="mb-4 bg-golf-green/10 text-golf-green border-golf-green/20">
               Meet the Champion
             </Badge>
@@ -50,7 +67,7 @@ const AboutSection = () => {
           </div>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 order-3 lg:col-span-2">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
