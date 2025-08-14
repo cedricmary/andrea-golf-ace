@@ -14,7 +14,89 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      investments: {
+        Row: {
+          amount: number
+          created_at: string
+          currency: string | null
+          id: string
+          investment_tier: string
+          message: string | null
+          sponsor_id: string | null
+          status: string | null
+          stripe_session_id: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          amount: number
+          created_at?: string
+          currency?: string | null
+          id?: string
+          investment_tier: string
+          message?: string | null
+          sponsor_id?: string | null
+          status?: string | null
+          stripe_session_id?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          amount?: number
+          created_at?: string
+          currency?: string | null
+          id?: string
+          investment_tier?: string
+          message?: string | null
+          sponsor_id?: string | null
+          status?: string | null
+          stripe_session_id?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "investments_sponsor_id_fkey"
+            columns: ["sponsor_id"]
+            isOneToOne: false
+            referencedRelation: "sponsors"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      sponsors: {
+        Row: {
+          company_name: string | null
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          phone: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          company_name?: string | null
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          phone?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          company_name?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          phone?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
