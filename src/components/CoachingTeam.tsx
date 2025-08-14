@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { User, Trophy, Instagram, ExternalLink, Calendar, Award, Target } from "lucide-react";
+import { User, Trophy, Instagram, ExternalLink, Calendar, Award, Target, Heart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const CoachingTeam = () => {
@@ -54,6 +54,50 @@ const CoachingTeam = () => {
       ],
       coachingPhilosophy: "Every young golfer has unique potential. My role is to nurture their natural abilities while building a strong technical foundation and mental resilience that will serve them throughout their golf journey.",
       partnershipDetails: "Andrea has been training under Isabelle's guidance since 2022, focusing on technical swing development, mental game & course management, tournament preparation, and physical conditioning."
+    },
+    {
+      id: "andrea-father",
+      name: "Andrea's Father",
+      title: "Personal Support & Motivation Coach",
+      specialization: "Family Support & Travel Companion",
+      experience: "4+ years",
+      location: "PACA Region",
+      role: "Family Support",
+      qualifications: [
+        "Dedicated Golf Parent",
+        "Tournament Travel Coordinator", 
+        "Emotional Support Specialist",
+        "Golf Equipment Manager"
+      ],
+      achievements: [
+        {
+          title: "Most Supportive Golf Parent",
+          year: "2021-2024",
+          organization: "Golf de Luberon",
+          icon: Heart
+        },
+        {
+          title: "Perfect Tournament Attendance",
+          year: "2022-2024",
+          organization: "Regional Tournaments",
+          icon: Target
+        },
+        {
+          title: "Family Golf Development Award",
+          year: "2023",
+          organization: "Ligue PACA",
+          icon: Trophy
+        }
+      ],
+      careerHighlights: [
+        "Accompanies Andrea to every tournament and practice session",
+        "Provides unwavering emotional support and motivation",
+        "Manages all travel logistics and tournament preparations",
+        "Creates a positive and encouraging environment for Andrea's development",
+        "Coordinates with coaches to ensure consistent training approach"
+      ],
+      coachingPhilosophy: "Being a golf parent means being Andrea's biggest supporter, his safe harbor during tough rounds, and his celebration partner during victories. My role is to provide unconditional love and support while letting the professionals handle the technical training.",
+      partnershipDetails: "As Andrea's father, I'm there for every practice, every tournament, and every milestone. My focus is on emotional support, logistics coordination, and ensuring Andrea maintains his love for the game while pursuing excellence."
     },
     {
       id: "stephanie-paloumet",
@@ -151,20 +195,24 @@ const CoachingTeam = () => {
                         </div>
                       </div>
                       <div className="flex gap-2">
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          onClick={() => window.open(`https://instagram.com/${coach.instagram.replace('@', '')}`, '_blank')}
-                        >
-                          <Instagram className="w-4 h-4" />
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="icon"
-                          onClick={() => window.open(coach.website, '_blank')}
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                        </Button>
+                        {coach.instagram && (
+                          <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={() => window.open(`https://instagram.com/${coach.instagram.replace('@', '')}`, '_blank')}
+                          >
+                            <Instagram className="w-4 h-4" />
+                          </Button>
+                        )}
+                        {coach.website && (
+                          <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={() => window.open(coach.website, '_blank')}
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </Button>
+                        )}
                       </div>
                     </div>
                   </CardHeader>
@@ -192,18 +240,22 @@ const CoachingTeam = () => {
 
                     {/* Contact */}
                     <div className="flex items-center gap-4 pt-4 border-t">
-                      <Button variant="outline" className="flex items-center gap-2">
-                        <Instagram className="w-4 h-4" />
-                        {coach.instagram}
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        className="flex items-center gap-2"
-                        onClick={() => window.open(coach.website, '_blank')}
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        Website
-                      </Button>
+                      {coach.instagram && (
+                        <Button variant="outline" className="flex items-center gap-2">
+                          <Instagram className="w-4 h-4" />
+                          {coach.instagram}
+                        </Button>
+                      )}
+                      {coach.website && (
+                        <Button 
+                          variant="outline" 
+                          className="flex items-center gap-2"
+                          onClick={() => window.open(coach.website, '_blank')}
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          Website
+                        </Button>
+                      )}
                       <p className="text-sm text-muted-foreground">
                         📍 {coach.location}
                       </p>
