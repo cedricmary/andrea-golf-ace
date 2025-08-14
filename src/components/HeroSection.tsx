@@ -90,10 +90,6 @@ const HeroSection = () => {
             <Award className="w-5 h-5" />
             {t('hero.achievements')}
           </Button>
-          <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToStats}>
-            <Target className="w-5 h-5" />
-            See Stats
-          </Button>
           <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToCoach}>
             <User className="w-5 h-5" />
             {t('hero.meetTeam')}
