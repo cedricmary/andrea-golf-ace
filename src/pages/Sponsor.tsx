@@ -14,7 +14,7 @@ const Sponsor = () => {
     <div className="min-h-screen">
       {/* Navigation */}
       <div className="absolute top-6 left-6 z-20">
-        <Button variant="outline" size="sm" asChild className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-white">
+        <Button variant="outline" size="sm" asChild className="bg-golf-green border-golf-green text-white hover:bg-golf-green/90 hover:text-white shadow-lg">
           <Link to="/">
             <Home className="h-4 w-4 mr-2" />
             {t('success.home')}
