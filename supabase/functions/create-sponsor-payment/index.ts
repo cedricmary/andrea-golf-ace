@@ -83,7 +83,7 @@ serve(async (req) => {
       line_items: [
         {
           price_data: {
-            currency: "usd",
+            currency: "eur",
             product_data: {
               name: `${tier} Sponsorship - Andrea Golf Champion`,
               description: `${tier} tier sponsorship investment for Andrea's golf career`,

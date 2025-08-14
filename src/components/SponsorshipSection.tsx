@@ -23,7 +23,7 @@ const sponsorshipTiers = [
   {
     id: "bronze",
     name: "Bronze Supporter",
-    amount: 10000, // $100
+    amount: 9000, // €90
     icon: Target,
     color: "bg-amber-100 text-amber-800",
     features: [
@@ -35,7 +35,7 @@ const sponsorshipTiers = [
   {
     id: "silver", 
     name: "Silver Champion",
-    amount: 25000, // $250
+    amount: 22500, // €225
     icon: Star,
     color: "bg-gray-100 text-gray-800",
     features: [
@@ -48,7 +48,7 @@ const sponsorshipTiers = [
   {
     id: "gold",
     name: "Gold Patron",
-    amount: 50000, // $500
+    amount: 45000, // €450
     icon: Crown,
     color: "bg-yellow-100 text-yellow-800",
     features: [
@@ -61,7 +61,7 @@ const sponsorshipTiers = [
   {
     id: "platinum",
     name: "Platinum Elite",
-    amount: 100000, // $1000
+    amount: 90000, // €900
     icon: Diamond,
     color: "bg-purple-100 text-purple-800",
     features: [
@@ -202,7 +202,7 @@ const SponsorshipSection = () => {
                   </div>
                   <CardTitle className="text-xl">{tier.name}</CardTitle>
                   <div className="text-3xl font-bold text-golf-green">
-                    ${(tier.amount / 100).toLocaleString()}
+                    €{(tier.amount / 100).toLocaleString()}
                   </div>
                   <Badge className={tier.color}>
                     {tier.id.charAt(0).toUpperCase() + tier.id.slice(1)}
