@@ -45,6 +45,29 @@ const AchievementsSection = () => {
       description: "Outstanding progress and dedication to the sport",
       icon: Award,
       color: "championship-gold"
+    },
+    {
+      title: t('achievements.uskids.paca'),
+      year: "2024",
+      description: t('achievements.uskids.paca.desc'),
+      icon: Trophy,
+      color: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: t('achievements.uskids.bastide'),
+      year: "2024",
+      description: t('achievements.uskids.bastide.desc'),
+      icon: Medal,
+      color: "trophy-bronze"
+    },
+    {
+      title: t('achievements.uskids.european'),
+      year: "2024",
+      description: t('achievements.uskids.european.desc'),
+      icon: Award,
+      color: "championship-gold",
+      link: "https://tournaments.uskidsgolf.com/tournaments/international/find-tournament/511347/european-championship-2024"
     }
   ];
 

@@ -55,6 +55,12 @@ const translations = {
     'achievements.championship.desc': 'First place in junior category tournament',
     'achievements.medal': 'Multiple Tournament Medals',
     'achievements.medal.desc': 'Consistent top-3 finishes across regional competitions',
+    'achievements.uskids.paca': 'USKids Golf PACA Local Tour',
+    'achievements.uskids.paca.desc': 'Top 5 finish in regional USKids Golf PACA tournament series',
+    'achievements.uskids.bastide': 'Golf de la Grande Bastide Tournament',
+    'achievements.uskids.bastide.desc': 'Strong performance in USKids Golf tournament at Golf de la Grande Bastide',
+    'achievements.uskids.european': 'USKids European Championship 2024',
+    'achievements.uskids.european.desc': 'Qualified and competed in the prestigious USKids European Championship',
 
     // About Section
     'about.title': 'About Andrea',
@@ -150,6 +156,12 @@ const translations = {
     'achievements.championship.desc': 'Première place en tournoi catégorie junior',
     'achievements.medal': 'Multiples Médailles de Tournoi',
     'achievements.medal.desc': 'Finitions constantes dans le top 3 à travers les compétitions régionales',
+    'achievements.uskids.paca': 'USKids Golf PACA Local Tour',
+    'achievements.uskids.paca.desc': 'Top 5 dans la série de tournois USKids Golf PACA régionaux',
+    'achievements.uskids.bastide': 'Tournoi Golf de la Grande Bastide',
+    'achievements.uskids.bastide.desc': 'Performance solide au tournoi USKids Golf au Golf de la Grande Bastide',
+    'achievements.uskids.european': 'Championnat Européen USKids 2024',
+    'achievements.uskids.european.desc': 'Qualifié et a participé au prestigieux Championnat Européen USKids',
 
     // About Section
     'about.title': 'À Propos d\'Andrea',
