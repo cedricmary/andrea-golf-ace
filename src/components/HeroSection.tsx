@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Trophy, Award, Target } from "lucide-react";
+import { Trophy, Award, Target, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/golf-course-hero.jpg";
 
 const HeroSection = () => {
@@ -41,6 +42,12 @@ const HeroSection = () => {
           <Button variant="hero" size="lg" className="text-lg px-8">
             <Target className="w-5 h-5" />
             See Stats
+          </Button>
+          <Button variant="hero" size="lg" className="text-lg px-8" asChild>
+            <Link to="/sponsor">
+              <Heart className="w-5 h-5" />
+              Become a Sponsor
+            </Link>
           </Button>
         </div>
         
