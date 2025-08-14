@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Medal, Award, Target, Calendar } from "lucide-react";
+import { Trophy, Medal, Award, Target, Calendar, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import trophyImage from "@/assets/championship-trophy.jpg";
 import medalsImage from "@/assets/golf-medals.jpg";
@@ -15,7 +15,8 @@ const AchievementsSection = () => {
       year: "2024",
       description: t('achievements.trophee2024.desc'),
       icon: Trophy,
-      color: "trophy-silver"
+      color: "trophy-silver",
+      link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u10-2024/"
     },
     {
       title: t('achievements.championship'),
@@ -81,32 +82,52 @@ const AchievementsSection = () => {
           
           {/* Achievements List */}
           <div className="lg:col-span-2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {achievements.map((achievement, index) => {
-                const IconComponent = achievement.icon;
-                return (
-                  <Card key={index} className="shadow-card hover:shadow-golf transition-shadow hover:scale-105 transition-transform">
-                    <CardHeader className="pb-3">
-                      <div className="flex items-center gap-3">
-                        <div className={`p-2 rounded-lg bg-${achievement.color}/10`}>
-                          <IconComponent className={`w-6 h-6 text-${achievement.color}`} />
-                        </div>
-                        <div>
-                          <CardTitle className="text-lg">{achievement.title}</CardTitle>
-                          <Badge variant="secondary" className="mt-1">
-                            <Calendar className="w-3 h-3 mr-1" />
-                            {achievement.year}
-                          </Badge>
-                        </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {achievements.map((achievement, index) => {
+              const IconComponent = achievement.icon;
+              const CardComponent = achievement.link ? 'a' : 'div';
+              
+              return (
+                <Card 
+                  key={index} 
+                  className="shadow-card hover:shadow-golf transition-shadow hover:scale-105 transition-transform"
+                  {...(achievement.link && {
+                    onClick: () => window.open(achievement.link, '_blank'),
+                    style: { cursor: 'pointer' }
+                  })}
+                >
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-3">
+                      <div className={`p-2 rounded-lg bg-${achievement.color}/10`}>
+                        <IconComponent className={`w-6 h-6 text-${achievement.color}`} />
                       </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-muted-foreground">{achievement.description}</p>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2">
+                          <CardTitle className="text-lg">{achievement.title}</CardTitle>
+                          {achievement.link && (
+                            <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
+                          )}
+                        </div>
+                        <Badge variant="secondary" className="mt-1">
+                          <Calendar className="w-3 h-3 mr-1" />
+                          {achievement.year}
+                        </Badge>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{achievement.description}</p>
+                    {achievement.link && (
+                      <p className="text-xs text-golf-green mt-2 flex items-center gap-1">
+                        <ExternalLink className="w-3 h-3" />
+                        Voir les résultats officiels
+                      </p>
+                    )}
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
           </div>
         </div>
         
