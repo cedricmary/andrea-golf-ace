@@ -8,17 +8,6 @@ const HeroesSection = () => {
 
   const heroes = [
     {
-      id: "tiger-woods",
-      name: "Tiger Woods",
-      nationality: "USA",
-      achievements: "15 Major Championships",
-      inspiration: "The greatest comeback story in golf history",
-      quote: "Champions keep playing until they get it right.",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop&crop=face",
-      majorWins: 15,
-      icon: Trophy
-    },
-    {
       id: "rory-mcilroy",
       name: "Rory McIlroy",
       nationality: "Northern Ireland",
@@ -30,26 +19,37 @@ const HeroesSection = () => {
       icon: Star
     },
     {
-      id: "jon-rahm",
-      name: "Jon Rahm",
-      nationality: "Spain",
-      achievements: "2 Major Championships",
-      inspiration: "European excellence and passionate play",
-      quote: "Every shot counts, every moment matters.",
-      image: "https://images.unsplash.com/photo-1561230286-5b8db6dff1a8?w=400&h=400&fit=crop&crop=face",
-      majorWins: 2,
+      id: "ricky-fowler",
+      name: "Ricky Fowler",
+      nationality: "USA",
+      achievements: "PGA Tour Champion",
+      inspiration: "Style, charisma, and clutch performances",
+      quote: "I want to be known as a guy who shows up when it matters most.",
+      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop&crop=face",
+      majorWins: 0,
       icon: Target
     },
     {
-      id: "viktor-hovland",
-      name: "Viktor Hovland",
-      nationality: "Norway",
-      achievements: "PGA Tour Winner",
-      inspiration: "Young European talent breaking barriers",
-      quote: "Consistency and improvement are the keys to success.",
+      id: "romain-langasque",
+      name: "Romain Langasque",
+      nationality: "France",
+      achievements: "European Tour Winner",
+      inspiration: "French excellence and European pride",
+      quote: "Representing France on the world stage is an honor.",
       image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop&crop=face",
       majorWins: 0,
       icon: Award
+    },
+    {
+      id: "ludvig-aberg",
+      name: "Ludvig Åberg",
+      nationality: "Sweden",
+      achievements: "Rising European Star",
+      inspiration: "Young talent showing the future of European golf",
+      quote: "Every round is a chance to improve and learn.",
+      image: "https://images.unsplash.com/photo-1561230286-5b8db6dff1a8?w=400&h=400&fit=crop&crop=face",
+      majorWins: 0,
+      icon: Trophy
     }
   ];
 
