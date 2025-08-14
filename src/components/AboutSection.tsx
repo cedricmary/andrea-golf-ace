@@ -53,7 +53,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-card">
+    <section className="py-20 bg-gradient-card" data-section="about">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Andrea's Photo */}

@@ -8,6 +8,13 @@ import heroImage from "@/assets/golf-course-hero.jpg";
 const HeroSection = () => {
   const { t } = useLanguage();
 
+  const scrollToStats = () => {
+    const statsSection = document.querySelector('[data-section="about"]');
+    if (statsSection) {
+      statsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -47,7 +54,7 @@ const HeroSection = () => {
             <Award className="w-5 h-5" />
             {t('hero.achievements')}
           </Button>
-          <Button variant="hero" size="lg" className="text-lg px-8">
+          <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToStats}>
             <Target className="w-5 h-5" />
             See Stats
           </Button>
