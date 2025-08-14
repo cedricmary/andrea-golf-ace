@@ -1,18 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Heart, Clock, Users, Zap } from "lucide-react";
+import { Heart, Clock, Users, Zap, Trophy, Target } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-
-const stats = [
-  { label: "Years Playing", value: "3", icon: Clock },
-  { label: "Tournaments Won", value: "5+", icon: Zap },
-  { label: "Golf Lessons", value: "150+", icon: Users },
-  { label: "Passion Level", value: "100%", icon: Heart }
-];
 
 const AboutSection = () => {
   const { t } = useLanguage();
+
+  const stats = [
+    { label: "Years Playing", value: "4", icon: Clock },
+    { label: "Tournaments Played", value: "12+", icon: Users },
+    { label: "Top 3 Finishes", value: "8", icon: Zap },
+    { label: "Regional Ranking", value: "Top 5", icon: Heart },
+    { label: "Best Tournament Result", value: "1st", icon: Trophy },
+    { label: "Training Hours/Week", value: "15", icon: Target }
+  ];
 
   return (
     <section className="py-20 bg-gradient-card">
@@ -63,21 +65,21 @@ const AboutSection = () => {
           </div>
           
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 gap-4 order-3 lg:col-span-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 order-3 lg:col-span-2">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
                 <Card key={index} className="text-center shadow-card hover:shadow-golf transition-shadow">
                   <CardHeader className="pb-3">
                     <div className="mx-auto p-3 bg-golf-green/10 rounded-full w-fit">
-                      <IconComponent className="w-8 h-8 text-golf-green" />
+                      <IconComponent className="w-6 h-6 text-golf-green" />
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-3xl font-bold text-golf-green mb-2">
+                    <div className="text-2xl md:text-3xl font-bold text-golf-green mb-2">
                       {stat.value}
                     </div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="text-xs md:text-sm text-muted-foreground">
                       {stat.label}
                     </div>
                   </CardContent>
