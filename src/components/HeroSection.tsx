@@ -11,7 +11,13 @@ const HeroSection = () => {
   const scrollToStats = () => {
     const statsSection = document.querySelector('[data-section="about"]');
     if (statsSection) {
-      statsSection.scrollIntoView({ behavior: 'smooth' });
+      statsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    } else {
+      console.warn('Stats section not found');
     }
   };
 
