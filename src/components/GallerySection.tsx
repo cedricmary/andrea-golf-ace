@@ -10,6 +10,16 @@ const GallerySection = () => {
       src: "/lovable-uploads/1b679295-73b3-44d6-b62d-0f8fd1300ad1.png",
       alt: "Andrea enjoying the scenic golf course view",
       caption: "Andrea overlooking the beautiful countryside during tournament week"
+    },
+    {
+      src: "/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png",
+      alt: "Andrea demonstrating perfect swing technique on the golf course",
+      caption: "Andrea's textbook swing form during practice session"
+    },
+    {
+      src: "/lovable-uploads/69b1010b-4dcd-4b60-ad2d-dd87b4208200.png",
+      alt: "Andrea with fellow young golfers on the course",
+      caption: "Team spirit - Andrea with fellow competitors at a youth tournament"
     }
   ];
 
@@ -47,8 +57,8 @@ const GallerySection = () => {
         </div>
         
         {/* Placeholder for more images */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-          {[...Array(4)].map((_, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+          {[...Array(3)].map((_, index) => (
             <Card key={index} className="aspect-square bg-golf-sand/20 border-2 border-dashed border-golf-sand/40 flex items-center justify-center">
               <div className="text-center text-golf-navy/40">
                 <Camera className="w-8 h-8 mx-auto mb-2" />
