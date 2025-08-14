@@ -3,6 +3,7 @@ import AchievementsSection from "@/components/AchievementsSection";
 import AboutSection from "@/components/AboutSection";
 import MeritPointsHistory from "@/components/MeritPointsHistory";
 import MedalCollection from "@/components/MedalCollection";
+import CoachingTeam from "@/components/CoachingTeam";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
 import SponsorshipSection from "@/components/SponsorshipSection";
@@ -15,6 +16,7 @@ const Index = () => {
       <AboutSection />
       <MeritPointsHistory />
       <MedalCollection />
+      <CoachingTeam />
       <GallerySection />
       <SponsorshipSection />
       <ContactSection />
