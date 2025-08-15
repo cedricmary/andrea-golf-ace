@@ -55,6 +55,11 @@ const GallerySection = () => {
       src: "/lovable-uploads/da42e502-dcd5-40ce-b2cb-11e118ce7112.png",
       alt: "International youth golf gathering with flags from multiple countries",
       caption: "Andrea with fellow young golfers from around the world at an international tournament"
+    },
+    {
+      src: "/lovable-uploads/dcd77dd3-0c7d-4c8e-87ec-51ddfe074217.png",
+      alt: "Andrea with coach at historic golf club",
+      caption: "Andrea with his coach at a prestigious golf club with beautiful historic architecture"
     }
   ];
 
