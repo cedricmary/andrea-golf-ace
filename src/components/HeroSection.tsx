@@ -120,7 +120,7 @@ const HeroSection = () => {
           {t('hero.description')}
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
           <Button variant="champion" size="lg" className="text-lg px-8" onClick={scrollToAbout}>
             <User className="w-5 h-5" />
             {t('hero.meetAndrea')}
@@ -145,6 +145,15 @@ const HeroSection = () => {
           >
             <MapPin className="w-5 h-5" />
             {t('hero.myClub')}
+          </Button>
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="text-lg px-8"
+            onClick={() => document.querySelector('[data-section="ligue"]')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            <Trophy className="w-5 h-5" />
+            Ligue PACA
           </Button>
           <Button variant="hero" size="lg" className="text-lg px-8" asChild>
             <Link to="/sponsor">
