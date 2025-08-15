@@ -30,6 +30,16 @@ const GallerySection = () => {
       src: "/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png",
       alt: "Andrea in action during tournament play",
       caption: "Tournament focus - Andrea concentrating during competitive play"
+    },
+    {
+      src: "/lovable-uploads/0876263d-fffb-4d78-84b4-12cbdddd43fe.png",
+      alt: "Andrea at Club de Golf ULZAMA",
+      caption: "Andrea posing at the beautiful Club de Golf ULZAMA with the clubhouse in the background"
+    },
+    {
+      src: "/lovable-uploads/d8fbb45b-62c6-4e30-a2c3-3e0fe05b54b5.png",
+      alt: "Andrea on the golf course with scenic mountain views",
+      caption: "Andrea enjoying a beautiful day on the golf course with stunning countryside views"
     }
   ];
 
