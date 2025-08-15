@@ -381,6 +381,11 @@ const AchievementsSection = () => {
                               <div className="lg:col-span-6">
                                 <div className="flex items-center gap-2 mb-1">
                                   <h4 className="font-semibold text-foreground">{tournament.name}</h4>
+                                  {tournament.name.includes("Grand Prix") && (
+                                    <Badge className="bg-championship-gold/10 text-championship-gold border-championship-gold/20 text-xs">
+                                      Grand Prix
+                                    </Badge>
+                                  )}
                                   {tournament.verified && (
                                     <Badge variant="secondary" className="text-xs bg-golf-green/10 text-golf-green">
                                       Verified
