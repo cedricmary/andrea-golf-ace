@@ -202,12 +202,12 @@ const AchievementsSection = () => {
     {
       name: "US Kids Golf - Golf de Roquebrune (Championnat final)",
       date: "30 novembre 2024",
-      position: "1er",
+      position: "7ème",
       category: "U10",
       location: "Golf de Roquebrune",
-      score: "Net 65",
-      medal: "Or",
-      medalColor: "championship-gold",
+      score: "N/A",
+      medal: "Top 10",
+      medalColor: "golf-green",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513066/golf-de-roquebrune-tour-championship/results",
       verified: true
     },
