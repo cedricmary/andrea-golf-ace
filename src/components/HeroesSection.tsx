@@ -44,17 +44,6 @@ const HeroesSection = () => {
       majorWins: 0,
       icon: Award,
       website: "https://romainlangasque.com/"
-    },
-    {
-      id: "ludvig-aberg",
-      name: "Ludvig Åberg",
-      nationality: "Sweden",
-      achievements: "Rising European Star",
-      inspiration: "Young talent showing the future of European golf",
-      quote: "Every round is a chance to improve and learn.",
-      image: "https://images.unsplash.com/photo-1561230286-5b8db6dff1a8?w=400&h=400&fit=crop&crop=face",
-      majorWins: 0,
-      icon: Trophy
     }
   ];
 
