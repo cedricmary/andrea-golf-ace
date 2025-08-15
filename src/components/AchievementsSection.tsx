@@ -244,18 +244,6 @@ const AchievementsSection = () => {
       verified: true
     },
     {
-      name: "Grand Prix de Saint-Donat Jeunes",
-      date: "20 avril 2024",
-      position: "2ème",
-      category: "Benjamin",
-      location: "Golf de Saint-Donat",
-      score: "148 (75+73)",
-      medal: "Argent",
-      medalColor: "trophy-silver",
-      link: "https://liguegolfpaca.org/grand-prix-de-saint-donat-2024/",
-      verified: true
-    },
-    {
       name: "US Kids Golf - Golf de la Grande Bastide (Tour Championship)",
       date: "9 mars 2024",
       position: "6ème",
