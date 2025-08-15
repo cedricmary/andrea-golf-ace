@@ -224,6 +224,18 @@ const AchievementsSection = () => {
       verified: true
     },
     {
+      name: "Trophée Jeunes Golfeurs U10 Finale Régionale",
+      date: "septembre 2024",
+      position: "2ème",
+      category: "U10 Garçons",
+      location: "Golf de St Donat",
+      score: "Score net 68",
+      medal: "Argent",
+      medalColor: "trophy-silver",
+      link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u10-2024/",
+      verified: true
+    },
+    {
       name: "US Kids Golf - Golf de Valgarde",
       date: "20 octobre 2024",
       position: "4ème",
@@ -282,18 +294,6 @@ const AchievementsSection = () => {
       medalColor: "golf-green",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: false
-    },
-    {
-      name: "Trophée Jeunes Golfeurs U10 Finale Régionale",
-      date: "septembre 2024",
-      position: "2ème",
-      category: "U10 Garçons",
-      location: "Golf de St Donat",
-      score: "Score net 68",
-      medal: "Argent",
-      medalColor: "trophy-silver",
-      link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u10-2024/",
-      verified: true
     },
     {
       name: "Grand Prix Jeunes de Valgarde",
