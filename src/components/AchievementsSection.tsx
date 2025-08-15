@@ -500,7 +500,7 @@ const AchievementsSection = () => {
                 if (tournament.date.includes("décembre")) { month = "Décembre"; monthNumber = 12; }
                 if (tournament.date.includes("novembre") || tournament.date.includes("Novembre")) { month = "Novembre"; monthNumber = 11; }
                 if (tournament.date.includes("octobre") || tournament.date.includes("Octobre")) { month = "Octobre"; monthNumber = 10; }
-                if (tournament.date.includes("Sept") || tournament.date.includes("Septembre")) { month = "Septembre"; monthNumber = 9; }
+                if (tournament.date.includes("Sept") || tournament.date.includes("Septembre") || tournament.date.includes("septembre")) { month = "Septembre"; monthNumber = 9; }
                 if (tournament.date.includes("Août")) { month = "Août"; monthNumber = 8; }
                 if (tournament.date.includes("juillet") || tournament.date.includes("Juillet")) { month = "Juillet"; monthNumber = 7; }
                 if (tournament.date.includes("Juin")) { month = "Juin"; monthNumber = 6; }
