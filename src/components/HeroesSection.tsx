@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Trophy, Star, Target, Award, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import roryMcIlroyImage from "@/assets/rory-mcilroy.jpg";
+import rickyFowlerImage from "@/assets/ricky-fowler.jpg";
 
 const HeroesSection = () => {
   const { t } = useLanguage();
@@ -27,7 +28,7 @@ const HeroesSection = () => {
       achievements: "PGA Tour Champion",
       inspiration: "Style, charisma, and clutch performances",
       quote: "I want to be known as a guy who shows up when it matters most.",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop&crop=face",
+      image: rickyFowlerImage,
       majorWins: 0,
       icon: Target,
       website: "https://rickiefowler.com/"
