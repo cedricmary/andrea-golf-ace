@@ -44,26 +44,10 @@ const AchievementsSection = () => {
     {
       title: "US Kids Golf - Golf de Roquebrune (30 novembre 2024)",
       year: "2024",
-      description: "Championnat final US Kids Golf au Golf de Roquebrune le 30 novembre 2024",
-      icon: Trophy,
-      color: "championship-gold",
+      description: "7ème place au championnat final US Kids Golf au Golf de Roquebrune le 30 novembre 2024",
+      icon: Award,
+      color: "golf-green",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513066/golf-de-roquebrune-tour-championship/results"
-    },
-    {
-      title: "US Kids Golf - Golf de Valgarde (20 octobre 2024)",
-      year: "2024",
-      description: "Tournoi US Kids Golf au Golf de Valgarde le 20 octobre 2024",
-      icon: Award,
-      color: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
-    },
-    {
-      title: "US Kids Golf - Golf de Valgarde (19 octobre 2024)",
-      year: "2024",
-      description: "Tournoi US Kids Golf au Golf de Valgarde le 19 octobre 2024",
-      icon: Award,
-      color: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
       title: "US Kids Golf - Golf de Roquebrune (24 août 2024)",
@@ -233,30 +217,6 @@ const AchievementsSection = () => {
       medal: "Argent",
       medalColor: "trophy-silver",
       link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u10-2024/",
-      verified: true
-    },
-    {
-      name: "US Kids Golf - Golf de Valgarde",
-      date: "20 octobre 2024",
-      position: "4ème",
-      category: "U10",
-      location: "Golf de Valgarde",
-      score: "Net 74",
-      medal: "Top 5",
-      medalColor: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
-      verified: true
-    },
-    {
-      name: "US Kids Golf - Golf de Valgarde",
-      date: "19 octobre 2024",
-      position: "5ème",
-      category: "U10",
-      location: "Golf de Valgarde",
-      score: "Net 75",
-      medal: "Top 5",
-      medalColor: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: true
     },
     {
