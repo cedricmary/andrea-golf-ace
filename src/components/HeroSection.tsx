@@ -108,11 +108,6 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <div className="flex justify-center mb-6">
-          <div className="p-4 bg-championship-gold/20 rounded-full backdrop-blur-sm">
-            <Trophy className="w-16 h-16 text-championship-gold" />
-          </div>
-        </div>
         
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-champion -mt-24 md:-mt-32">
           {t('hero.title')}
