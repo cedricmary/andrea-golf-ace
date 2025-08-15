@@ -160,11 +160,6 @@ const HeroSection = () => {
         </div>
         
         {/* Floating Elements */}
-        <div className="absolute top-20 left-10 animate-bounce">
-          <div className="w-12 h-12 bg-championship-gold/30 rounded-full backdrop-blur-sm flex items-center justify-center">
-            <Trophy className="w-6 h-6 text-championship-gold" />
-          </div>
-        </div>
         <div className="absolute bottom-32 right-10 animate-bounce delay-1000">
           <div className="w-10 h-10 bg-golf-green/30 rounded-full backdrop-blur-sm flex items-center justify-center">
             <Award className="w-5 h-5 text-golf-green-light" />
