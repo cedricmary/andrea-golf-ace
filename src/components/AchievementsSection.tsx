@@ -244,18 +244,6 @@ const AchievementsSection = () => {
       verified: true
     },
     {
-      name: "Tournoi USKids Golf PACA",
-      date: "15 juin 2024",
-      position: "4ème",
-      category: "U10",
-      location: "Golf de Valescure",
-      score: "Net 70",
-      medal: "Top 5",
-      medalColor: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
-      verified: false
-    },
-    {
       name: "Grand Prix Jeunes de Valgarde",
       date: "25-26 Mai 2024",
       position: "5ème",
