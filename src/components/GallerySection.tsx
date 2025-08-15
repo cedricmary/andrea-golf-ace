@@ -60,6 +60,31 @@ const GallerySection = () => {
       src: "/lovable-uploads/dcd77dd3-0c7d-4c8e-87ec-51ddfe074217.png",
       alt: "Andrea with coach at historic golf club",
       caption: "Andrea with his coach at a prestigious golf club with beautiful historic architecture"
+    },
+    {
+      src: "/lovable-uploads/63d3347b-2090-4ddf-a419-e28835b28a48.png",
+      alt: "Andrea at Royal Troon Golf Club",
+      caption: "Andrea at the legendary Royal Troon Golf Club in Scotland, host of The Open Championship"
+    },
+    {
+      src: "/lovable-uploads/25d1d7b4-e136-4e26-8d0d-f16ff10824cb.png",
+      alt: "Andrea at St Andrews, the Home of Golf",
+      caption: "Andrea at the iconic St Andrews, the birthplace and spiritual home of golf"
+    },
+    {
+      src: "/lovable-uploads/83708a0f-0c89-4af8-9384-86194f038456.png",
+      alt: "Andrea with caddie on Scottish links course",
+      caption: "Andrea with his caddie on a stunning Scottish links golf course during his golf pilgrimage"
+    },
+    {
+      src: "/lovable-uploads/be4a1d52-4814-4133-ac19-0b7054bd50d3.png",
+      alt: "Andrea on coastal links course with ocean views",
+      caption: "Andrea enjoying the breathtaking coastal views and yellow gorse on a Scottish links course"
+    },
+    {
+      src: "/lovable-uploads/bd009998-1992-4722-903b-35ce7feb3c78.png",
+      alt: "Andrea at Old Course Hotel St Andrews",
+      caption: "Andrea at the famous Old Course Hotel St Andrews, overlooking the legendary golf course"
     }
   ];
 
