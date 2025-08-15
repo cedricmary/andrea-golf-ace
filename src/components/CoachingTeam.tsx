@@ -67,7 +67,6 @@ const CoachingTeam = () => {
         location: "Golf de Luberon, PACA Region",
         instagram: "https://www.instagram.com/stephanie_paloumet/",
         email: "stephanie.paloumet@golfluberon.com",
-        website: "https://www.golfduluberon.com/",
         role: "Mental Coach",
         image: "/lovable-uploads/a59ecb74-88ec-4ca7-a42f-f3a19a061122.png",
         briefDescription: "Spécialiste en coaching mental du golf et psychologie du sport pour optimiser les performances mentales.",
