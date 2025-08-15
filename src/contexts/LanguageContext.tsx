@@ -68,7 +68,7 @@ const translations = {
     // About Section
     'about.title': 'About Andrea',
     'about.passion.title': 'Passion for Golf',
-    'about.passion.desc': 'Andrea discovered golf at the tender age of 6, when his natural swing caught the attention of professionals at Golf de Luberon. What started as weekend family outings quickly evolved into a serious passion. His intuitive understanding of the game, combined with an unwavering dedication, has made him one of the most promising young talents in the PACA region.',
+    'about.passion.desc': 'Andrea has been playing golf since he was 3 years old, when his natural swing caught the attention of professionals at Golf de Luberon. What started as weekend family outings quickly evolved into a serious passion. His intuitive understanding of the game, combined with an unwavering dedication, has made him one of the most promising young talents in the PACA region.',
     'about.training.title': 'Dedicated Training',
     'about.training.desc': 'Andrea maintains a rigorous training schedule, dedicating 15 hours per week to perfecting his craft under the expert guidance of his personal golf pro, Isabelle Boileau. Working with this certified PGA professional at Golf de Luberon, he focuses on technical precision, mental fortitude, and strategic course management. His training regimen includes driving range sessions, short game practice, physical conditioning, and competitive match play to simulate tournament pressure.',
     'about.goals.title': 'Future Aspirations',
@@ -212,7 +212,7 @@ const translations = {
     // About Section
     'about.title': 'À Propos d\'Andrea',
     'about.passion.title': 'Passion pour le Golf',
-    'about.passion.desc': 'Andrea a découvert le golf à l\'âge tendre de 6 ans, quand son swing naturel a attiré l\'attention des professionnels au Golf de Luberon. Ce qui a commencé comme des sorties familiales de week-end a rapidement évolué vers une passion sérieuse. Sa compréhension intuitive du jeu, combinée à un dévouement inébranlable, en a fait l\'un des jeunes talents les plus prometteurs de la région PACA.',
+    'about.passion.desc': 'Andrea joue au golf depuis l\'âge de 3 ans, quand son swing naturel a attiré l\'attention des professionnels au Golf de Luberon. Ce qui a commencé comme des sorties familiales de week-end a rapidement évolué vers une passion sérieuse. Sa compréhension intuitive du jeu, combinée à un dévouement inébranlable, en a fait l\'un des jeunes talents les plus prometteurs de la région PACA.',
     'about.training.title': 'Entraînement Dévoué',
     'about.training.desc': 'Andrea maintient un programme d\'entraînement rigoureux, consacrant 15 heures par semaine à perfectionner son art sous la guidance experte de sa professionnelle de golf personnelle, Isabelle Boileau. Travaillant avec cette professionnelle PGA certifiée au Golf de Luberon, il se concentre sur la précision technique, la force mentale et la gestion stratégique du parcours. Son régime d\'entraînement comprend des séances au practice, la pratique du petit jeu, le conditionnement physique et le jeu compétitif pour simuler la pression des tournois.',
     'about.goals.title': 'Aspirations Futures',
