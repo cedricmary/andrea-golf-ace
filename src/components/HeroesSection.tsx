@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Star, Target, Award, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import roryMcIlroyImage from "@/assets/rory-mcilroy.jpg";
+import roryMcIlroyImage from "@/assets/rory-mcilroy-portrait.jpg";
 import rickyFowlerImage from "@/assets/ricky-fowler.jpg";
 
 const HeroesSection = () => {
