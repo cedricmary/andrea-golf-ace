@@ -28,7 +28,8 @@ const HeroesSection = () => {
       quote: "I want to be known as a guy who shows up when it matters most.",
       image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop&crop=face",
       majorWins: 0,
-      icon: Target
+      icon: Target,
+      website: "https://rickiefowler.com/"
     },
     {
       id: "romain-langasque",
