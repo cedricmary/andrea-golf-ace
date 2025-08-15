@@ -420,125 +420,151 @@ const AchievementsSection = () => {
             </p>
           </div>
 
-          {/* Tournament Results Grouped by Year */}
+          {/* Tournament Results Grouped by Year and Month */}
           <div className="space-y-8">
-            {/* Group tournaments by year */}
+            {/* Group tournaments by year and month */}
             {(() => {
-              // Extract year from date and sort tournaments
-              const tournamentsWithYear = tournaments.map(tournament => {
-                let year = "2024"; // default
+              // Extract year and month from date and sort tournaments
+              const tournamentsWithYearMonth = tournaments.map(tournament => {
+                let year = "2024";
+                let month = "Unknown";
+                let monthNumber = 12;
+                
                 if (tournament.date.includes("2024")) year = "2024";
                 if (tournament.date.includes("2023")) year = "2023";
-                return { ...tournament, year };
+                
+                // Extract month
+                if (tournament.date.includes("décembre")) { month = "Décembre"; monthNumber = 12; }
+                if (tournament.date.includes("novembre")) { month = "Novembre"; monthNumber = 11; }
+                if (tournament.date.includes("octobre")) { month = "Octobre"; monthNumber = 10; }
+                if (tournament.date.includes("Sept")) { month = "Septembre"; monthNumber = 9; }
+                if (tournament.date.includes("Août")) { month = "Août"; monthNumber = 8; }
+                if (tournament.date.includes("juillet")) { month = "Juillet"; monthNumber = 7; }
+                if (tournament.date.includes("Juin")) { month = "Juin"; monthNumber = 6; }
+                if (tournament.date.includes("Mai")) { month = "Mai"; monthNumber = 5; }
+                if (tournament.date.includes("Avril")) { month = "Avril"; monthNumber = 4; }
+                if (tournament.date.includes("Mars")) { month = "Mars"; monthNumber = 3; }
+                if (tournament.date.includes("janvier")) { month = "Janvier"; monthNumber = 1; }
+                
+                return { ...tournament, year, month, monthNumber };
               });
 
-              // Sort by date (most recent first)
-              const sortedTournaments = tournamentsWithYear.sort((a, b) => {
-                const getDateValue = (dateStr: string) => {
-                  if (dateStr.includes("Sept")) return 9;
-                  if (dateStr.includes("Août")) return 8;
-                  if (dateStr.includes("Juillet")) return 7;
-                  if (dateStr.includes("Juin")) return 6;
-                  if (dateStr.includes("Mai")) return 5;
-                  if (dateStr.includes("Avril")) return 4;
-                  if (dateStr.includes("Mars")) return 3;
-                  return 0;
-                };
-                return getDateValue(b.date) - getDateValue(a.date);
+              // Sort by year and month (most recent first)
+              const sortedTournaments = tournamentsWithYearMonth.sort((a, b) => {
+                if (a.year !== b.year) return parseInt(b.year) - parseInt(a.year);
+                return b.monthNumber - a.monthNumber;
               });
 
-              // Group by year
+              // Group by year, then by month
               const groupedByYear = sortedTournaments.reduce((acc, tournament) => {
-                if (!acc[tournament.year]) acc[tournament.year] = [];
-                acc[tournament.year].push(tournament);
+                if (!acc[tournament.year]) acc[tournament.year] = {};
+                if (!acc[tournament.year][tournament.month]) acc[tournament.year][tournament.month] = [];
+                acc[tournament.year][tournament.month].push(tournament);
                 return acc;
-              }, {} as Record<string, typeof tournaments>);
+              }, {} as Record<string, Record<string, typeof tournaments>>);
 
-              // Render each year group
+              // Render each year and month group
               return Object.keys(groupedByYear)
                 .sort((a, b) => parseInt(b) - parseInt(a)) // Most recent year first
                 .map(year => (
-                  <div key={year} className="space-y-4">
+                  <div key={year} className="space-y-6">
                     {/* Year Header */}
                     <div className="flex items-center gap-4 mb-6">
-                      <Badge className="bg-golf-green/10 text-golf-green border-golf-green/20 px-4 py-2 text-lg">
+                      <Badge className="bg-golf-green/10 text-golf-green border-golf-green/20 px-6 py-3 text-xl font-bold">
                         {year}
                       </Badge>
                       <div className="flex-1 h-px bg-border"></div>
                     </div>
 
-                    {/* Tournaments for this year */}
-                    {groupedByYear[year].map((tournament, index) => {
-                      const MedalIcon = getMedalIcon(tournament.medal);
-                      return (
-                        <Card 
-                          key={`tournament-${year}-${index}`} 
-                          className={`shadow-card hover:shadow-golf transition-all ${
-                            tournament.link ? 'cursor-pointer hover:scale-[1.02]' : ''
-                          } ${tournament.verified ? 'border-l-4 border-l-golf-green' : ''}`}
-                          {...(tournament.link && {
-                            onClick: () => window.open(tournament.link, '_blank')
+                    {/* Month sections within the year */}
+                    {Object.keys(groupedByYear[year])
+                      .sort((a, b) => {
+                        const monthOrder = { "Décembre": 12, "Novembre": 11, "Octobre": 10, "Septembre": 9, "Août": 8, "Juillet": 7, "Juin": 6, "Mai": 5, "Avril": 4, "Mars": 3, "Février": 2, "Janvier": 1 };
+                        return (monthOrder[b as keyof typeof monthOrder] || 0) - (monthOrder[a as keyof typeof monthOrder] || 0);
+                      })
+                      .map(month => (
+                        <div key={`${year}-${month}`} className="space-y-4 ml-8">
+                          {/* Month Header */}
+                          <div className="flex items-center gap-3 mb-4">
+                            <Badge variant="outline" className="bg-championship-gold/5 text-championship-gold border-championship-gold/30 px-4 py-2 text-lg">
+                              {month}
+                            </Badge>
+                            <div className="flex-1 h-px bg-border/50"></div>
+                          </div>
+                          {/* Tournaments for this month */}
+                          {groupedByYear[year][month].map((tournament, index) => {
+                            const MedalIcon = getMedalIcon(tournament.medal);
+                            return (
+                              <Card 
+                                key={`tournament-${year}-${month}-${index}`} 
+                                className={`shadow-card hover:shadow-golf transition-all ${
+                                  tournament.link ? 'cursor-pointer hover:scale-[1.02]' : ''
+                                } ${tournament.verified ? 'border-l-4 border-l-golf-green' : ''}`}
+                                {...(tournament.link && {
+                                  onClick: () => window.open(tournament.link, '_blank')
+                                })}
+                              >
+                                <CardContent className="p-6">
+                                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                                    {/* Medal & Position */}
+                                    <div className="lg:col-span-2 flex items-center gap-3">
+                                      <div className={`p-3 rounded-full bg-${tournament.medalColor}/10`}>
+                                        <MedalIcon className={`w-6 h-6 text-${tournament.medalColor}`} />
+                                      </div>
+                                      <div>
+                                        <div className={`text-xl font-bold text-${tournament.medalColor}`}>
+                                          {tournament.position}
+                                        </div>
+                                        <div className="text-xs text-muted-foreground">
+                                          {tournament.medal}
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    {/* Tournament Info */}
+                                    <div className="lg:col-span-6">
+                                      <div className="flex items-center gap-2 mb-1">
+                                        <h4 className="font-semibold text-foreground">{tournament.name}</h4>
+                                        {tournament.name.includes("Grand Prix") && (
+                                          <Badge className="bg-championship-gold/10 text-championship-gold border-championship-gold/20 text-xs">
+                                            Grand Prix
+                                          </Badge>
+                                        )}
+                                        {tournament.verified && (
+                                          <Badge variant="secondary" className="text-xs bg-golf-green/10 text-golf-green">
+                                            Verified
+                                          </Badge>
+                                        )}
+                                        {tournament.link && (
+                                          <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
+                                        )}
+                                      </div>
+                                      <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                                        <span className="flex items-center gap-1">
+                                          <Calendar className="w-3 h-3" />
+                                          {tournament.date}
+                                        </span>
+                                        <span className="flex items-center gap-1">
+                                          <MapPin className="w-3 h-3" />
+                                          {tournament.location}
+                                        </span>
+                                        <span>Catégorie: {tournament.category}</span>
+                                      </div>
+                                    </div>
+
+                                    {/* Score */}
+                                    <div className="lg:col-span-4 text-right lg:text-left">
+                                      <div className="text-lg font-semibold text-foreground">
+                                        {tournament.score}
+                                      </div>
+                                    </div>
+                                  </div>
+                                </CardContent>
+                              </Card>
+                            );
                           })}
-                        >
-                          <CardContent className="p-6">
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
-                              {/* Medal & Position */}
-                              <div className="lg:col-span-2 flex items-center gap-3">
-                                <div className={`p-3 rounded-full bg-${tournament.medalColor}/10`}>
-                                  <MedalIcon className={`w-6 h-6 text-${tournament.medalColor}`} />
-                                </div>
-                                <div>
-                                  <div className={`text-xl font-bold text-${tournament.medalColor}`}>
-                                    {tournament.position}
-                                  </div>
-                                  <div className="text-xs text-muted-foreground">
-                                    {tournament.medal}
-                                  </div>
-                                </div>
-                              </div>
-
-                              {/* Tournament Info */}
-                              <div className="lg:col-span-6">
-                                <div className="flex items-center gap-2 mb-1">
-                                  <h4 className="font-semibold text-foreground">{tournament.name}</h4>
-                                  {tournament.name.includes("Grand Prix") && (
-                                    <Badge className="bg-championship-gold/10 text-championship-gold border-championship-gold/20 text-xs">
-                                      Grand Prix
-                                    </Badge>
-                                  )}
-                                  {tournament.verified && (
-                                    <Badge variant="secondary" className="text-xs bg-golf-green/10 text-golf-green">
-                                      Verified
-                                    </Badge>
-                                  )}
-                                  {tournament.link && (
-                                    <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
-                                  )}
-                                </div>
-                                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                                  <span className="flex items-center gap-1">
-                                    <Calendar className="w-3 h-3" />
-                                    {tournament.date}
-                                  </span>
-                                  <span className="flex items-center gap-1">
-                                    <MapPin className="w-3 h-3" />
-                                    {tournament.location}
-                                  </span>
-                                  <span>Catégorie: {tournament.category}</span>
-                                </div>
-                              </div>
-
-                              {/* Score */}
-                              <div className="lg:col-span-4 text-right lg:text-left">
-                                <div className="text-lg font-semibold text-foreground">
-                                  {tournament.score}
-                                </div>
-                              </div>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      );
-                    })}
+                        </div>
+                      ))}
                   </div>
                 ));
             })()}
