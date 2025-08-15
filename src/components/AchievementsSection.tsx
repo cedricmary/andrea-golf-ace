@@ -114,14 +114,6 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "Longest Drive Award",
-      year: "2023",
-      description: "Record holder for longest drive in junior category",
-      icon: Target,
-      color: "golf-green",
-      link: "https://www.golfduluberon.com/"
-    },
-    {
       title: "Most Improved Player",
       year: "2023",
       description: "Outstanding progress and dedication to the sport",
