@@ -61,51 +61,51 @@ const CoachingTeam = () => {
      {
        id: "stephanie-paloumet",
        name: "Stephanie Paloumet",
-       title: "Golf Instructor & Technique Specialist",
-       specialization: "Swing Technique & Mental Game",
-       experience: "12+ years",
-       location: "Golf de Luberon, PACA Region",
-       instagram: "https://www.instagram.com/stephanie_paloumet/",
-       email: "stephanie.paloumet@golfluberon.com",
-       website: "https://www.golfduluberon.com/",
-       role: "Technique Coach",
-       image: "/lovable-uploads/a59ecb74-88ec-4ca7-a42f-f3a19a061122.png",
-       briefDescription: "Instructrice de golf expérimentée spécialisée dans la technique du swing et le mental du jeu.",
-       qualifications: [
-         "PGA France Certified Professional",
-         "Swing Analysis Specialist",
-         "Sports Psychology in Golf",
-         "Youth Development Coach"
-       ],
-       achievements: [
-         {
-           title: "PGA Teaching Professional Certification",
-           year: "2012",
-           organization: "PGA France",
-           icon: Award
-         },
-         {
-           title: "Youth Coach of the Year",
-           year: "2022",
-           organization: "Ligue PACA Golf",
-           icon: Trophy
-         },
-         {
-           title: "Developed 25+ Junior Players",
-           year: "2012-2024",
-           organization: "Golf de Luberon",
-           icon: Target
-         }
-       ],
-       careerHighlights: [
-         "Specialized in swing technique analysis and improvement",
-         "Expert in sports psychology applications for golf",
-         "Developed comprehensive youth training programs",
-         "Mentor for junior golfers in competitive environments",
-         "Focus on building confidence and mental resilience"
-       ],
-       coachingPhilosophy: "I believe that technical excellence must be balanced with mental strength. My approach focuses on building solid fundamentals while developing the psychological tools needed for competitive success.",
-       partnershipDetails: "Stephanie works closely with Andrea on refining swing mechanics and developing mental strategies for tournament play, complementing the professional experience provided by Isabelle."
+        title: "Golf Mental Coach & Sports Psychology Specialist",
+        specialization: "Mental Game & Sports Psychology",
+        experience: "12+ years",
+        location: "Golf de Luberon, PACA Region",
+        instagram: "https://www.instagram.com/stephanie_paloumet/",
+        email: "stephanie.paloumet@golfluberon.com",
+        website: "https://www.golfduluberon.com/",
+        role: "Mental Coach",
+        image: "/lovable-uploads/a59ecb74-88ec-4ca7-a42f-f3a19a061122.png",
+        briefDescription: "Spécialiste en coaching mental du golf et psychologie du sport pour optimiser les performances mentales.",
+        qualifications: [
+          "Sports Psychology in Golf Specialist",
+          "Mental Performance Coach Certification",
+          "Mindfulness & Meditation Instructor",
+          "Youth Mental Development Coach"
+        ],
+        achievements: [
+          {
+            title: "Sports Psychology Certification",
+            year: "2012",
+            organization: "French Sports Psychology Association",
+            icon: Award
+          },
+          {
+            title: "Mental Coach of the Year",
+            year: "2022",
+            organization: "Ligue PACA Golf",
+            icon: Trophy
+          },
+          {
+            title: "Developed Mental Resilience in 25+ Players",
+            year: "2012-2024",
+            organization: "Golf de Luberon",
+            icon: Target
+          }
+        ],
+        careerHighlights: [
+          "Specialized in sports psychology and mental performance optimization",
+          "Expert in developing mental resilience and confidence in golfers",
+          "Focus on pre-shot routines and competitive mindset development",
+          "Mentor for junior golfers dealing with tournament pressure",
+          "Developer of mindfulness and visualization techniques for golf"
+        ],
+        coachingPhilosophy: "Golf is 90% mental. My approach focuses on building unshakeable confidence, developing mental resilience, and creating the psychological tools needed to perform under pressure. Every golfer has the potential to achieve mental mastery.",
+        partnershipDetails: "Stephanie works exclusively on Andrea's mental game, developing his psychological resilience, confidence building, and tournament mindset to complement Isabelle's professional technical expertise."
      },
      {
       id: "andrea-father",
