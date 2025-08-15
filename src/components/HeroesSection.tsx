@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Star, Target, Award } from "lucide-react";
+import { Trophy, Star, Target, Award, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroesSection = () => {
@@ -16,7 +16,8 @@ const HeroesSection = () => {
       quote: "I've always said the harder you work, the luckier you get.",
       image: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=400&h=400&fit=crop&crop=face",
       majorWins: 4,
-      icon: Star
+      icon: Star,
+      website: "http://www.rorymcilroy.com/"
     },
     {
       id: "ricky-fowler",
@@ -113,6 +114,17 @@ const HeroesSection = () => {
                       <p className="text-xs text-golf-green font-medium">
                         {hero.inspiration}
                       </p>
+                      {hero.website && (
+                        <a
+                          href={hero.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 mt-2 text-xs text-championship-gold hover:text-championship-gold/80 transition-colors"
+                        >
+                          <ExternalLink className="w-3 h-3" />
+                          Site officiel
+                        </a>
+                      )}
                     </div>
                   </div>
                 </CardContent>
