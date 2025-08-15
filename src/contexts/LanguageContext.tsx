@@ -180,6 +180,14 @@ const translations = {
     'heroes.subtitle': 'The champions who inspire and motivate me to give my best on the course',
     'heroes.quote': 'These champions show me that with hard work, determination and passion, anything is possible in golf. Each of them inspires me to push my limits.',
     'heroes.website': 'Official Website',
+
+    // Ligue Section
+    'ligue.badge': 'Our League',
+    'ligue.title': 'PACA Golf League',
+    'ligue.description': 'Discover the organization and structure of the Provence-Alpes-Côte d\'Azur Golf League',
+    'ligue.bureau.title': 'Board of Directors 2025-2028',
+    'ligue.commissions.title': 'Commissions',
+    'ligue.link': 'View more on the official PACA Golf League website',
   },
   fr: {
     // Hero Section
@@ -324,5 +332,13 @@ const translations = {
     'heroes.subtitle': 'Les champions qui m\'inspirent et me motivent à donner le meilleur de moi-même sur le parcours',
     'heroes.quote': 'Ces champions me montrent qu\'avec du travail, de la détermination et de la passion, tout est possible dans le golf. Chacun d\'eux m\'inspire à repousser mes limites.',
     'heroes.website': 'Site officiel',
+
+    // Ligue Section
+    'ligue.badge': 'Notre Ligue',
+    'ligue.title': 'Ligue Golf PACA',
+    'ligue.description': 'Découvrez l\'organisation et la structure de la Ligue de Golf de Provence-Alpes-Côte d\'Azur',
+    'ligue.bureau.title': 'Bureau Directeur 2025-2028',
+    'ligue.commissions.title': 'Commissions',
+    'ligue.link': 'Voir plus sur le site officiel de la Ligue Golf PACA',
   }
 };

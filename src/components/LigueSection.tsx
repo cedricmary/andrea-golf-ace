@@ -56,17 +56,17 @@ const LigueSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">
-            Notre Ligue
+            {t('ligue.badge')}
           </Badge>
-          <h2 className="text-4xl font-bold mb-4">Ligue Golf PACA</h2>
+          <h2 className="text-4xl font-bold mb-4">{t('ligue.title')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Découvrez l'organisation et la structure de la Ligue de Golf de Provence-Alpes-Côte d'Azur
+            {t('ligue.description')}
           </p>
         </div>
 
         {/* Bureau Directeur */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center">Bureau Directeur 2025-2028</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">{t('ligue.bureau.title')}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {bureauMembers.map((member, index) => (
               <Card key={index} className="text-center">
@@ -81,7 +81,7 @@ const LigueSection = () => {
 
         {/* Commissions */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-8 text-center">Commissions</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center">{t('ligue.commissions.title')}</h3>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {commissions.map((commission, index) => {
               const IconComponent = commission.icon;
@@ -115,7 +115,7 @@ const LigueSection = () => {
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
           >
             <ExternalLink className="w-4 h-4" />
-            Voir plus sur le site officiel de la Ligue Golf PACA
+            {t('ligue.link')}
           </a>
         </div>
       </div>
