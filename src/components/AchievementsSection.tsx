@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Medal, Award, Target, Calendar, ExternalLink, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import trophyImage from "@/assets/championship-trophy.jpg";
 
 
 const AchievementsSection = () => {
@@ -295,33 +294,12 @@ const AchievementsSection = () => {
           </Card>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Trophy Image */}
-          <div className="lg:col-span-1">
-            <Card className="shadow-trophy border-championship-gold/20">
-              <CardContent className="p-6">
-                <img 
-                  src={trophyImage} 
-                  alt="Championship Trophy" 
-                  className="w-full h-64 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-xl font-bold text-center text-championship-gold mb-2">
-                  Latest Championship Trophy
-                </h3>
-                <p className="text-center text-muted-foreground">
-                  Andrea's most recent victory in the junior club championship
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-          
-          {/* Major Achievements */}
-          <div className="lg:col-span-2">
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6 font-champion">
-                Major Achievements & Recent Results
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Major Achievements */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-foreground mb-6 font-champion text-center">
+            Major Achievements & Recent Results
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {achievements.slice(0, 6).map((achievement, index) => {
                   const IconComponent = achievement.icon;
                   
@@ -365,9 +343,7 @@ const AchievementsSection = () => {
                     </Card>
                   );
                 })}
-              </div>
             </div>
-          </div>
         </div>
 
         {/* Detailed Tournament Results */}
