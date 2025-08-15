@@ -96,7 +96,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="flex justify-center mb-6">
-          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-championship-gold/50 backdrop-blur-sm shadow-lg">
+          <div className="w-32 h-24 rounded-lg overflow-hidden border-4 border-championship-gold/50 backdrop-blur-sm shadow-lg">
             <img 
               src="/lovable-uploads/9bf951bb-e101-4eb5-8092-291b4c95d38e.png" 
               alt="Beru Family - Site Logo"
