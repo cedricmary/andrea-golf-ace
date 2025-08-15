@@ -173,6 +173,13 @@ const translations = {
     'club.course.holes': 'Holes',
     'club.course.par': 'Course Par',
     'club.course.length': 'Total Length',
+
+    // Heroes Section
+    'heroes.badge': 'Golf Inspirations',
+    'heroes.title': 'My Golf Heroes',
+    'heroes.subtitle': 'The champions who inspire and motivate me to give my best on the course',
+    'heroes.quote': 'These champions show me that with hard work, determination and passion, anything is possible in golf. Each of them inspires me to push my limits.',
+    'heroes.website': 'Official Website',
   },
   fr: {
     // Hero Section
@@ -310,5 +317,12 @@ const translations = {
     'club.course.holes': 'Trous',
     'club.course.par': 'Par du Parcours',
     'club.course.length': 'Longueur Totale',
+
+    // Heroes Section
+    'heroes.badge': 'Inspirations Golf',
+    'heroes.title': 'Mes Héros du Golf',
+    'heroes.subtitle': 'Les champions qui m\'inspirent et me motivent à donner le meilleur de moi-même sur le parcours',
+    'heroes.quote': 'Ces champions me montrent qu\'avec du travail, de la détermination et de la passion, tout est possible dans le golf. Chacun d\'eux m\'inspire à repousser mes limites.',
+    'heroes.website': 'Site officiel',
   }
 };

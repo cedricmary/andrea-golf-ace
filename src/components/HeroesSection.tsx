@@ -52,13 +52,13 @@ const HeroesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-championship-gold/10 text-championship-gold border-championship-gold/20">
-            Golf Inspirations
+            {t('heroes.badge')}
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-champion">
-            Mes Héros du Golf
+            {t('heroes.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Les champions qui m'inspirent et me motivent à donner le meilleur de moi-même sur le parcours
+            {t('heroes.subtitle')}
           </p>
         </div>
 
@@ -115,7 +115,7 @@ const HeroesSection = () => {
                           className="inline-flex items-center gap-1 mt-2 text-xs text-championship-gold hover:text-championship-gold/80 transition-colors"
                         >
                           <ExternalLink className="w-3 h-3" />
-                          Site officiel
+                          {t('heroes.website')}
                         </a>
                       )}
                     </div>
@@ -131,8 +131,7 @@ const HeroesSection = () => {
           <div className="max-w-4xl mx-auto">
             <div className="p-8 bg-gradient-hero rounded-2xl border border-championship-gold/20">
               <blockquote className="text-xl md:text-2xl font-medium text-foreground italic mb-4">
-                "Ces champions me montrent qu'avec du travail, de la détermination et de la passion, 
-                tout est possible dans le golf. Chacun d'eux m'inspire à repousser mes limites."
+                "{t('heroes.quote')}"
               </blockquote>
               <cite className="text-championship-gold font-semibold">— Andrea</cite>
             </div>
