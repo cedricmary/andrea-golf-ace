@@ -115,7 +115,7 @@ const CoachingTeam = () => {
       experience: "4+ years",
       location: "PACA Region",
       role: "Family Support",
-      image: "/lovable-uploads/cd9b2f1d-ef39-4be1-91aa-b3c4370e0995.png",
+      image: "/lovable-uploads/10b862e3-05b7-4538-806b-6aeca7b1baa7.png",
       briefDescription: "Le soutien inconditionnel et la motivation d'Andrea dans chaque tournoi et entraînement.",
       qualifications: [
         "Dedicated Golf Parent",
