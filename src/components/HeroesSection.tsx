@@ -42,7 +42,8 @@ const HeroesSection = () => {
       quote: "Representing France on the world stage is an honor.",
       image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop&crop=face",
       majorWins: 0,
-      icon: Award
+      icon: Award,
+      website: "https://romainlangasque.com/"
     },
     {
       id: "ludvig-aberg",
