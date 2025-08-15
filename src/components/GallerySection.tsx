@@ -40,6 +40,11 @@ const GallerySection = () => {
       src: "/lovable-uploads/d8fbb45b-62c6-4e30-a2c3-3e0fe05b54b5.png",
       alt: "Andrea on the golf course with scenic mountain views",
       caption: "Andrea enjoying a beautiful day on the golf course with stunning countryside views"
+    },
+    {
+      src: "/lovable-uploads/197c7c65-ca9a-4846-b0f6-ba5d578d87ff.png",
+      alt: "Andrea concentrating during practice on the golf course",
+      caption: "Andrea focused and determined during practice session on the course"
     }
   ];
 
