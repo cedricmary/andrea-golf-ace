@@ -3,7 +3,7 @@ import { Trophy, Award, Target, Heart, User, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import heroImage from "@/assets/golf-course-hero.jpg";
+import heroImage from "/lovable-uploads/3b5254bb-66ee-4ffe-b669-177179e9b506.png";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -66,9 +66,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-golf-green/80 via-golf-green/60 to-transparent" />
-      </div>
+      />
 
       {/* Language Switcher */}
       <div className="absolute top-6 right-6 z-20">
