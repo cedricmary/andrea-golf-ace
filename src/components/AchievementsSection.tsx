@@ -127,15 +127,15 @@ const AchievementsSection = () => {
   const tournaments = [
     // 2025 Tournaments (Completed by August)
     {
-      name: "Open Jeunes de Cannes-Mougins",
-      date: "Août 2025",
+      name: "Grand Prix Jeunes de la Ligue PACA",
+      date: "18-19 février 2025",
       position: "2ème",
       category: "U12",
-      location: "Golf de Cannes-Mougins",
+      location: "Golf Country Club de Cannes-Mougins",
       score: "142 (70+72)",
       medal: "Argent",
       medalColor: "trophy-silver",
-      link: "https://www.golfcannesmougins.com/",
+      link: "https://liguegolfpaca.org/competitions/competitions-jeunes/",
       verified: true
     },
     {
