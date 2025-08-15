@@ -16,7 +16,7 @@ const HeroesSection = () => {
       achievements: "4 Major Championships",
       inspiration: "Power, precision, and mental strength combined",
       quote: "I've always said the harder you work, the luckier you get.",
-      image: roryMcIlroyImage,
+      image: "/lovable-uploads/8117ca90-cd3c-4c08-932a-927a9e471b78.png",
       majorWins: 4,
       icon: Star,
       website: "http://www.rorymcilroy.com/"
