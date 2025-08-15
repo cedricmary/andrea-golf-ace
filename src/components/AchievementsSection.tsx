@@ -418,6 +418,7 @@ const AchievementsSection = () => {
                 if (tournament.date.includes("Mai")) { month = "Mai"; monthNumber = 5; }
                 if (tournament.date.includes("avril") || tournament.date.includes("Avril")) { month = "Avril"; monthNumber = 4; }
                 if (tournament.date.includes("mars") || tournament.date.includes("Mars")) { month = "Mars"; monthNumber = 3; }
+                if (tournament.date.includes("février") || tournament.date.includes("Février")) { month = "Février"; monthNumber = 2; }
                 if (tournament.date.includes("janvier")) { month = "Janvier"; monthNumber = 1; }
                 
                 return { ...tournament, year, month, monthNumber };
