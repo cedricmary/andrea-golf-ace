@@ -292,9 +292,13 @@ const CoachingTeam = () => {
                     {(coach.instagram || coach.website) && (
                       <div className="flex items-center gap-4 pt-4 border-t">
                         {coach.instagram && (
-                          <Button variant="outline" className="flex items-center gap-2">
+                          <Button 
+                            variant="outline" 
+                            className="flex items-center gap-2"
+                            onClick={() => window.open(coach.instagram.startsWith('http') ? coach.instagram : `https://instagram.com/${coach.instagram.replace('@', '')}`, '_blank')}
+                          >
                             <Instagram className="w-4 h-4" />
-                            {coach.instagram}
+                            {coach.instagram.startsWith('http') ? '@stephanie_paloumet' : coach.instagram}
                           </Button>
                         )}
                         {coach.website && (
