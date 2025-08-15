@@ -71,7 +71,7 @@ const MyClubSection = () => {
             <Card className="overflow-hidden">
               <CardContent className="p-6">
                 <div className="text-center space-y-4">
-                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                  <div className="w-32 h-24 mx-auto rounded-lg overflow-hidden border-2 border-primary/20">
                     <img 
                       src="/lovable-uploads/9bf951bb-e101-4eb5-8092-291b4c95d38e.png" 
                       alt="Beru Family"
