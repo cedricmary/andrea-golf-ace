@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Trophy, Award, Target, Heart, User, MapPin } from "lucide-react";
+import { Trophy, Award, Target, Heart, User, MapPin, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -80,6 +80,19 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToHeroes = () => {
+    const heroesSection = document.querySelector('[data-section="heroes"]');
+    if (heroesSection) {
+      heroesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+    } else {
+      console.warn('Heroes section not found');
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-44 md:pt-60">
       {/* Background Image */}
@@ -124,6 +137,10 @@ const HeroSection = () => {
           <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToCoach}>
             <User className="w-5 h-5" />
             {t('hero.meetTeam')}
+          </Button>
+          <Button variant="hero" size="lg" className="text-lg px-8" onClick={scrollToHeroes}>
+            <Star className="w-5 h-5" />
+            My Heroes
           </Button>
           <Button 
             variant="hero" 
