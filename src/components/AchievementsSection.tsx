@@ -244,66 +244,6 @@ const AchievementsSection = () => {
       verified: true
     },
     {
-      name: "US Kids Golf - Golf de la Grande Bastide (Tour Championship)",
-      date: "9 mars 2024",
-      position: "6ème",
-      category: "U10",
-      location: "Golf de la Grande Bastide",
-      score: "Net 76",
-      medal: "Top 10",
-      medalColor: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/511618/golf-de-la-grande-bastide-tour-championship/results",
-      verified: true
-    },
-    {
-      name: "US Kids Golf - Golf d'Opio Valbonne",
-      date: "29 mars 2024",
-      position: "3ème",
-      category: "U10",
-      location: "Golf d'Opio Valbonne",
-      score: "Net 71",
-      medal: "Bronze",
-      medalColor: "trophy-bronze",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
-      verified: true
-    },
-    {
-      name: "Championnat Régional PACA Jeunes",
-      date: "Mars 2024",
-      position: "1er",
-      category: "Minime",
-      location: "Golf de Luberon",
-      score: "Net 69",
-      medal: "Or",
-      medalColor: "championship-gold",
-      link: "https://liguegolfpaca.org/competitions/competitions-jeunes/",
-      verified: true
-    },
-    {
-      name: "US Kids Golf - Golf Bastide de La Salette",
-      date: "19 janvier 2024",
-      position: "5ème",
-      category: "U10",
-      location: "Golf Bastide de La Salette",
-      score: "Net 77",
-      medal: "Top 5",
-      medalColor: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
-      verified: true
-    },
-    {
-      name: "US Kids Golf - Golf De Saint Donat",
-      date: "12 janvier 2024",
-      position: "2ème",
-      category: "U10",
-      location: "Golf De Saint Donat",
-      score: "Net 69",
-      medal: "Argent",
-      medalColor: "trophy-silver",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
-      verified: true
-    },
-    {
       name: "Coupe du Luberon Junior",
       date: "Juillet 2024",
       position: "1er",
