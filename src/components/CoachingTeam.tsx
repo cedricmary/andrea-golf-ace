@@ -69,7 +69,7 @@ const CoachingTeam = () => {
        email: "stephanie.paloumet@golfluberon.com",
        website: "https://www.golfduluberon.com/",
        role: "Technique Coach",
-       image: "/src/assets/stephanie-paloumet.jpg",
+       image: "/lovable-uploads/a59ecb74-88ec-4ca7-a42f-f3a19a061122.png",
        briefDescription: "Instructrice de golf expérimentée spécialisée dans la technique du swing et le mental du jeu.",
        qualifications: [
          "PGA France Certified Professional",
