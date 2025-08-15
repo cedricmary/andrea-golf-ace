@@ -40,7 +40,7 @@ const translations = {
   en: {
     // Hero Section
     'hero.badge': 'Rising Golf Champion',
-    'hero.title': 'Andrea',
+    'hero.title': 'Andrea Mary',
     'hero.subtitle': 'Young Golf Talent',
     'hero.description': 'Follow the journey of a promising young golfer making waves in the sport',
     'hero.meetAndrea': 'Meet Andrea',
@@ -177,7 +177,7 @@ const translations = {
   fr: {
     // Hero Section
     'hero.badge': 'Champion de Golf Émergent',
-    'hero.title': 'Andrea',
+    'hero.title': 'Andrea Mary',
     'hero.subtitle': 'Jeune Talent du Golf',
     'hero.description': 'Suivez le parcours d\'un jeune golfeur prometteur qui fait des vagues dans ce sport',
     'hero.meetAndrea': 'Rencontrer Andrea',
