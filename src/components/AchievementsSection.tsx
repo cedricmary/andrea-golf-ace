@@ -296,7 +296,7 @@ const AchievementsSection = () => {
               Complete Achievement Record
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              All achievements, tournament results, and special recognitions
+              Tournament results
             </p>
           </div>
 
