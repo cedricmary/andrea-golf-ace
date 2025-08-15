@@ -208,6 +208,18 @@ const AchievementsSection = () => {
       verified: true
     },
     {
+      name: "Grand Prix Jeune de Valence",
+      date: "31 août - 1er septembre 2024",
+      position: "37ème",
+      category: "U12",
+      location: "Golf de Valence",
+      score: "N/A",
+      medal: "Participation",
+      medalColor: "trophy-bronze",
+      link: "https://pages.ffgolf.org/",
+      verified: true
+    },
+    {
       name: "Trophée Jeunes Golfeurs U10 Finale Régionale",
       date: "septembre 2024",
       position: "2ème",
