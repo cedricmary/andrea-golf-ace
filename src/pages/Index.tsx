@@ -2,7 +2,6 @@ import HeroSection from "@/components/HeroSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import AboutSection from "@/components/AboutSection";
 import MeritPointsHistory from "@/components/MeritPointsHistory";
-import MedalCollection from "@/components/MedalCollection";
 import CoachingTeam from "@/components/CoachingTeam";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
@@ -18,7 +17,6 @@ const Index = () => {
       <AboutSection />
       <AchievementsSection />
       <MeritPointsHistory />
-      <MedalCollection />
       <CoachingTeam />
       <HeroesSection />
       <MyClubSection />
