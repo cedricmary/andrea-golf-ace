@@ -244,18 +244,6 @@ const AchievementsSection = () => {
       verified: true
     },
     {
-      name: "Grand Prix Jeunes de Valgarde",
-      date: "25-26 Mai 2024",
-      position: "5ème",
-      category: "MG",
-      location: "Golf de Valgarde",
-      score: "165 (82+83)",
-      medal: "Top 5",
-      medalColor: "golf-green",
-      link: "https://liguegolfpaca.org/grand-prix-jeunes-de-valgarde-2024/",
-      verified: true
-    },
-    {
       name: "Grand Prix de Saint-Donat Jeunes",
       date: "20 avril 2024",
       position: "2ème",
