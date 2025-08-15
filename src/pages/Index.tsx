@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import SponsorshipSection from "@/components/SponsorshipSection";
 import HeroesSection from "@/components/HeroesSection";
 import MyClubSection from "@/components/MyClubSection";
+import LigueSection from "@/components/LigueSection";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <CoachingTeam />
       <HeroesSection />
       <MyClubSection />
+      <LigueSection />
       <GallerySection />
       <SponsorshipSection />
       <ContactSection />
