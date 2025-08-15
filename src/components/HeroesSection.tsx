@@ -40,7 +40,7 @@ const HeroesSection = () => {
       achievements: "European Tour Winner",
       inspiration: "French excellence and European pride",
       quote: "Representing France on the world stage is an honor.",
-      image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop&crop=face",
+      image: "/lovable-uploads/58858a70-27af-486a-a5fd-d7413b131bcf.png",
       majorWins: 0,
       icon: Award,
       website: "https://romainlangasque.com/"
