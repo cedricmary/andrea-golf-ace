@@ -125,6 +125,104 @@ const AchievementsSection = () => {
 
   // Detailed tournament results data
   const tournaments = [
+    // 2025 Tournaments (Upcoming)
+    {
+      name: "US Kids Golf - Golf Club Aix Marseille",
+      date: "15 mars 2025",
+      position: "TBD",
+      category: "U12",
+      location: "Golf Club Aix Marseille",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: false
+    },
+    {
+      name: "Grand Prix Jeunes de Valgarde",
+      date: "25-26 avril 2025",
+      position: "TBD",
+      category: "BG (Benjamin Garçons)",
+      location: "Golf de Valgarde",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://liguegolfpaca.org/grand-prix-jeunes-de-valgarde-2025/",
+      verified: false
+    },
+    {
+      name: "Trophée Jeunes Golfeurs U12 Finale Régionale",
+      date: "Mai 2025",
+      position: "TBD",
+      category: "U12 Garçons",
+      location: "Golf de St Donat",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u12-2025/",
+      verified: false
+    },
+    {
+      name: "US Kids Golf - Golf de Roquebrune",
+      date: "Juin 2025",
+      position: "TBD",
+      category: "U12",
+      location: "Golf de Roquebrune",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: false
+    },
+    {
+      name: "Open Jeunes de Cannes-Mougins",
+      date: "Juillet 2025",
+      position: "TBD",
+      category: "U12",
+      location: "Golf de Cannes-Mougins",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://www.golfcannesmougins.com/",
+      verified: false
+    },
+    {
+      name: "Grand Prix Jeunes d'Aix-Marseille - Trophée Roger COTTON",
+      date: "Septembre 2025",
+      position: "TBD",
+      category: "BG (Benjamin Garçons)",
+      location: "Golf d'Aix-Marseille",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://liguegolfpaca.org/grand-prix-jeunes-daix-marseille-trophee-roger-cotton-2025/",
+      verified: false
+    },
+    {
+      name: "US Kids Golf - Golf de Valgarde",
+      date: "Octobre 2025",
+      position: "TBD",
+      category: "U12",
+      location: "Golf de Valgarde",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: false
+    },
+    {
+      name: "US Kids Golf - Golf de Roquebrune (Championnat final)",
+      date: "Novembre 2025",
+      position: "TBD",
+      category: "U12",
+      location: "Golf de Roquebrune",
+      score: "TBD",
+      medal: "Participation",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: false
+    },
+    // 2024 Tournaments
     {
       name: "Grand Prix Jeunes d'Aix-Marseille - Trophée Roger COTTON",
       date: "28-29 Sept 2024",
@@ -430,20 +528,21 @@ const AchievementsSection = () => {
                 let month = "Unknown";
                 let monthNumber = 12;
                 
+                if (tournament.date.includes("2025")) year = "2025";
                 if (tournament.date.includes("2024")) year = "2024";
                 if (tournament.date.includes("2023")) year = "2023";
                 
                 // Extract month
                 if (tournament.date.includes("décembre")) { month = "Décembre"; monthNumber = 12; }
-                if (tournament.date.includes("novembre")) { month = "Novembre"; monthNumber = 11; }
-                if (tournament.date.includes("octobre")) { month = "Octobre"; monthNumber = 10; }
-                if (tournament.date.includes("Sept")) { month = "Septembre"; monthNumber = 9; }
+                if (tournament.date.includes("novembre") || tournament.date.includes("Novembre")) { month = "Novembre"; monthNumber = 11; }
+                if (tournament.date.includes("octobre") || tournament.date.includes("Octobre")) { month = "Octobre"; monthNumber = 10; }
+                if (tournament.date.includes("Sept") || tournament.date.includes("Septembre")) { month = "Septembre"; monthNumber = 9; }
                 if (tournament.date.includes("Août")) { month = "Août"; monthNumber = 8; }
-                if (tournament.date.includes("juillet")) { month = "Juillet"; monthNumber = 7; }
+                if (tournament.date.includes("juillet") || tournament.date.includes("Juillet")) { month = "Juillet"; monthNumber = 7; }
                 if (tournament.date.includes("Juin")) { month = "Juin"; monthNumber = 6; }
                 if (tournament.date.includes("Mai")) { month = "Mai"; monthNumber = 5; }
-                if (tournament.date.includes("Avril")) { month = "Avril"; monthNumber = 4; }
-                if (tournament.date.includes("Mars")) { month = "Mars"; monthNumber = 3; }
+                if (tournament.date.includes("avril") || tournament.date.includes("Avril")) { month = "Avril"; monthNumber = 4; }
+                if (tournament.date.includes("mars") || tournament.date.includes("Mars")) { month = "Mars"; monthNumber = 3; }
                 if (tournament.date.includes("janvier")) { month = "Janvier"; monthNumber = 1; }
                 
                 return { ...tournament, year, month, monthNumber };
