@@ -316,18 +316,6 @@ const AchievementsSection = () => {
       verified: true
     },
     {
-      name: "Open Jeunes de Cannes-Mougins",
-      date: "Août 2024",
-      position: "3ème",
-      category: "U12",
-      location: "Golf de Cannes-Mougins",
-      score: "145 (72+73)",
-      medal: "Bronze",
-      medalColor: "trophy-bronze",
-      link: "https://www.golfcannesmougins.com/",
-      verified: true
-    },
-    {
       name: "Coupe du Luberon Junior",
       date: "Juillet 2024",
       position: "1er",
