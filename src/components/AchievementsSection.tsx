@@ -324,7 +324,6 @@ const AchievementsSection = () => {
       score: "Net 67",
       medal: "Or",
       medalColor: "championship-gold",
-      link: "https://andreamary.com/",
       verified: false
     }
   ];
