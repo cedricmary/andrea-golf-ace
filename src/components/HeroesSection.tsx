@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Star, Target, Award, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import roryMcIlroyImage from "@/assets/rory-mcilroy.jpg";
 
 const HeroesSection = () => {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ const HeroesSection = () => {
       achievements: "4 Major Championships",
       inspiration: "Power, precision, and mental strength combined",
       quote: "I've always said the harder you work, the luckier you get.",
-      image: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=400&h=400&fit=crop&crop=face",
+      image: roryMcIlroyImage,
       majorWins: 4,
       icon: Star,
       website: "http://www.rorymcilroy.com/"
