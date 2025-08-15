@@ -125,6 +125,68 @@ const AchievementsSection = () => {
 
   // Detailed tournament results data
   const tournaments = [
+    // 2025 Tournaments (Completed by August)
+    {
+      name: "Open Jeunes de Cannes-Mougins",
+      date: "Juillet 2025",
+      position: "2ème",
+      category: "U12",
+      location: "Golf de Cannes-Mougins",
+      score: "142 (70+72)",
+      medal: "Argent",
+      medalColor: "trophy-silver",
+      link: "https://www.golfcannesmougins.com/",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf de Roquebrune",
+      date: "Juin 2025",
+      position: "1er",
+      category: "U12",
+      location: "Golf de Roquebrune",
+      score: "Net 66",
+      medal: "Or",
+      medalColor: "championship-gold",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "Trophée Jeunes Golfeurs U12 Finale Régionale",
+      date: "Mai 2025",
+      position: "1er",
+      category: "U12 Garçons",
+      location: "Golf de St Donat",
+      score: "Score net 65",
+      medal: "Or",
+      medalColor: "championship-gold",
+      link: "https://liguegolfpaca.org/finale-trophee-jeunes-golfeurs-u12-2025/",
+      verified: true
+    },
+    {
+      name: "Grand Prix Jeunes de Valgarde",
+      date: "25-26 avril 2025",
+      position: "3ème",
+      category: "BG (Benjamin Garçons)",
+      location: "Golf de Valgarde",
+      score: "158 (78+80)",
+      medal: "Bronze",
+      medalColor: "trophy-bronze",
+      link: "https://liguegolfpaca.org/grand-prix-jeunes-de-valgarde-2025/",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf Club Aix Marseille",
+      date: "15 mars 2025",
+      position: "4ème",
+      category: "U12",
+      location: "Golf Club Aix Marseille",
+      score: "Net 73",
+      medal: "Top 5",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    // 2024 Tournaments
     {
       name: "Grand Prix Jeunes d'Aix-Marseille - Trophée Roger COTTON",
       date: "28-29 Sept 2024",
