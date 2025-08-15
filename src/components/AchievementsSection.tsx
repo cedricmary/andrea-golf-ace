@@ -188,18 +188,6 @@ const AchievementsSection = () => {
     },
     // 2024 Tournaments
     {
-      name: "Grand Prix Jeunes d'Aix-Marseille - Trophée Roger COTTON",
-      date: "28-29 Sept 2024",
-      position: "T21",
-      category: "MG (Minime Garçons)",
-      location: "Golf d'Aix-Marseille",
-      score: "177 (87+90)",
-      medal: "Participation",
-      medalColor: "trophy-bronze",
-      link: "https://liguegolfpaca.org/grand-prix-jeunes-daix-marseille-trophee-roger-cotton-2024/",
-      verified: true
-    },
-    {
       name: "US Kids Golf - Golf Club Aix Marseille",
       date: "14 décembre 2024",
       position: "3ème",
@@ -221,6 +209,18 @@ const AchievementsSection = () => {
       medal: "Or",
       medalColor: "championship-gold",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "Grand Prix Jeunes d'Aix-Marseille - Trophée Roger COTTON",
+      date: "28-29 septembre 2024",
+      position: "T21",
+      category: "MG (Minime Garçons)",
+      location: "Golf d'Aix-Marseille",
+      score: "177 (87+90)",
+      medal: "Participation",
+      medalColor: "trophy-bronze",
+      link: "https://liguegolfpaca.org/grand-prix-jeunes-daix-marseille-trophee-roger-cotton-2024/",
       verified: true
     },
     {
@@ -273,7 +273,7 @@ const AchievementsSection = () => {
     },
     {
       name: "Tournoi USKids Golf PACA",
-      date: "Juin 2024",
+      date: "15 juin 2024",
       position: "4ème",
       category: "U10",
       location: "Golf de Valescure",
@@ -285,7 +285,7 @@ const AchievementsSection = () => {
     },
     {
       name: "Trophée Jeunes Golfeurs U10 Finale Régionale",
-      date: "Mai 2024",
+      date: "18 mai 2024",
       position: "2ème",
       category: "U10 Garçons",
       location: "Golf de St Donat",
@@ -309,7 +309,7 @@ const AchievementsSection = () => {
     },
     {
       name: "Grand Prix de Saint-Donat Jeunes",
-      date: "Avril 2024",
+      date: "20 avril 2024",
       position: "2ème",
       category: "Benjamin",
       location: "Golf de Saint-Donat",
