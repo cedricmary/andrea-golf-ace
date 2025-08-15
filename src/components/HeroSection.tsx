@@ -8,13 +8,30 @@ import { useState, useEffect } from "react";
 const HeroSection = () => {
   const { t } = useLanguage();
   
-  // Gallery images for background rotation
+  // All gallery images for background rotation (5 seconds each)
   const galleryImages = [
-    "/lovable-uploads/3b5254bb-66ee-4ffe-b669-177179e9b506.png",
     "/lovable-uploads/1b679295-73b3-44d6-b62d-0f8fd1300ad1.png",
     "/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png",
     "/lovable-uploads/69b1010b-4dcd-4b60-ad2d-dd87b4208200.png",
-    "/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png"
+    "/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png",
+    "/lovable-uploads/0876263d-fffb-4d78-84b4-12cbdddd43fe.png",
+    "/lovable-uploads/d8fbb45b-62c6-4e30-a2c3-3e0fe05b54b5.png",
+    "/lovable-uploads/197c7c65-ca9a-4846-b0f6-ba5d578d87ff.png",
+    "/lovable-uploads/0f16fe89-af3b-4f05-aa7b-de4afb44ca62.png",
+    "/lovable-uploads/da42e502-dcd5-40ce-b2cb-11e118ce7112.png",
+    "/lovable-uploads/dcd77dd3-0c7d-4c8e-87ec-51ddfe074217.png",
+    "/lovable-uploads/63d3347b-2090-4ddf-a419-e28835b28a48.png",
+    "/lovable-uploads/25d1d7b4-e136-4e26-8d0d-f16ff10824cb.png",
+    "/lovable-uploads/83708a0f-0c89-4af8-9384-86194f038456.png",
+    "/lovable-uploads/be4a1d52-4814-4133-ac19-0b7054bd50d3.png",
+    "/lovable-uploads/bd009998-1992-4722-903b-35ce7feb3c78.png",
+    "/lovable-uploads/6c7a32a5-5da0-41cd-9453-e2eee22ff06b.png",
+    "/lovable-uploads/c9a04897-42d3-4bbe-95f7-b7ac55322068.png",
+    "/lovable-uploads/5a4ee4f5-4237-4eca-bc51-85eff9ed7895.png",
+    "/lovable-uploads/5dee2c43-40d6-4705-807c-2942230c56b7.png",
+    "/lovable-uploads/6c6eca1b-40d6-482b-b243-abb2ce97af84.png",
+    "/lovable-uploads/f1bd3fd0-3d95-4bb0-aad8-99b92d9a42a8.png",
+    "/lovable-uploads/4cf0e98e-f83c-49a1-86b0-51241d9bd969.png"
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
