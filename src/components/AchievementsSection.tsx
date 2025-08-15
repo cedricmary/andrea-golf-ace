@@ -216,7 +216,7 @@ const AchievementsSection = () => {
       score: "N/A",
       medal: "Participation",
       medalColor: "trophy-bronze",
-      link: "https://pages.ffgolf.org/",
+      link: "https://pages.ffgolf.org/resultats/liste-competitions/d719003406b7cf093884907395fd2de4",
       verified: true
     },
     {
