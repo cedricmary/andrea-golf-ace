@@ -34,6 +34,79 @@ const AchievementsSection = () => {
       color: "trophy-bronze",
       link: "https://liguegolfpaca.org/competitions/"
     },
+    // US Kids Golf PACA Tournaments 2024
+    {
+      title: "US Kids Golf - Golf Club Aix Marseille",
+      year: "2024",
+      description: "Participation au tournoi US Kids Golf organisé au Golf Club Aix Marseille le 7 juillet 2024",
+      icon: Trophy,
+      color: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513061/golf-club-aix-marseille/results"
+    },
+    {
+      title: "US Kids Golf - Golf de la Grande Bastide (Tour Championship)",
+      year: "2024",
+      description: "Participation au championnat final US Kids Golf à la Grande Bastide le 30 mars 2024",
+      icon: Award,
+      color: "championship-gold",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/511618/golf-de-la-grande-bastide-tour-championship/results"
+    },
+    {
+      title: "US Kids Golf - Golf d'Opio Valbonne",
+      year: "2024",
+      description: "Tournoi US Kids Golf au Golf d'Opio Valbonne le 29 mars 2024",
+      icon: Medal,
+      color: "trophy-bronze",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: "US Kids Golf - Golf Bastide de La Salette",
+      year: "2024",
+      description: "Tournoi US Kids Golf au Golf Bastide de La Salette le 19 janvier 2024",
+      icon: Target,
+      color: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: "US Kids Golf - Golf De Saint Donat",
+      year: "2024",
+      description: "Tournoi US Kids Golf au Golf De Saint Donat le 12 janvier 2024",
+      icon: Trophy,
+      color: "trophy-silver",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: "US Kids Golf - Golf Club Aix Marseille (Décembre)",
+      year: "2024",
+      description: "Tournoi US Kids Golf au Golf Club Aix Marseille le 14 décembre 2024",
+      icon: Medal,
+      color: "trophy-bronze",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: "US Kids Golf - Golf de Roquebrune (Tour Championship)",
+      year: "2024",
+      description: "Championnat final US Kids Golf au Golf de Roquebrune le 30 novembre 2024",
+      icon: Trophy,
+      color: "championship-gold",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: "US Kids Golf - Golf de Valgarde",
+      year: "2024",
+      description: "Tournois US Kids Golf au Golf de Valgarde les 19 et 20 octobre 2024",
+      icon: Award,
+      color: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
+    {
+      title: "US Kids Golf - Golf de Roquebrune",
+      year: "2024",
+      description: "Tournoi US Kids Golf au Golf de Roquebrune le 24 août 2024",
+      icon: Medal,
+      color: "trophy-silver",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+    },
     {
       title: "Longest Drive Award",
       year: "2023",
@@ -49,30 +122,6 @@ const AchievementsSection = () => {
       icon: Award,
       color: "championship-gold",
       link: "https://www.golfduluberon.com/"
-    },
-    {
-      title: t('achievements.uskids.paca'),
-      year: "2024",
-      description: t('achievements.uskids.paca.desc'),
-      icon: Trophy,
-      color: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
-    },
-    {
-      title: t('achievements.uskids.bastide'),
-      year: "2024",
-      description: t('achievements.uskids.bastide.desc'),
-      icon: Medal,
-      color: "trophy-bronze",
-      link: "https://tournaments.uskidsgolf.com/"
-    },
-    {
-      title: t('achievements.uskids.european'),
-      year: "2024",
-      description: t('achievements.uskids.european.desc'),
-      icon: Award,
-      color: "championship-gold",
-      link: "https://tournaments.uskidsgolf.com/tournaments/international/find-tournament/511347/european-championship-2024"
     }
   ];
 
