@@ -36,7 +36,7 @@ const AchievementsSection = () => {
     },
     // US Kids Golf PACA Tournaments 2024 - Sorted by decreasing date
     {
-      title: "US Kids Golf - Golf Club Aix Marseille (Décembre)",
+      title: "US Kids Golf - Golf Club Aix Marseille (14 décembre 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf Club Aix Marseille le 14 décembre 2024",
       icon: Medal,
@@ -44,7 +44,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf de Roquebrune (Tour Championship)",
+      title: "US Kids Golf - Golf de Roquebrune (30 novembre 2024)",
       year: "2024",
       description: "Championnat final US Kids Golf au Golf de Roquebrune le 30 novembre 2024",
       icon: Trophy,
@@ -52,7 +52,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf de Valgarde (20 octobre)",
+      title: "US Kids Golf - Golf de Valgarde (20 octobre 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf de Valgarde le 20 octobre 2024",
       icon: Award,
@@ -60,7 +60,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf de Valgarde (19 octobre)",
+      title: "US Kids Golf - Golf de Valgarde (19 octobre 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf de Valgarde le 19 octobre 2024",
       icon: Award,
@@ -68,7 +68,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf de Roquebrune",
+      title: "US Kids Golf - Golf de Roquebrune (24 août 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf de Roquebrune le 24 août 2024",
       icon: Medal,
@@ -76,7 +76,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf Club Aix Marseille",
+      title: "US Kids Golf - Golf Club Aix Marseille (7 juillet 2024)",
       year: "2024",
       description: "Participation au tournoi US Kids Golf organisé au Golf Club Aix Marseille le 7 juillet 2024",
       icon: Trophy,
@@ -84,7 +84,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513061/golf-club-aix-marseille/results"
     },
     {
-      title: "US Kids Golf - Golf de la Grande Bastide (Tour Championship)",
+      title: "US Kids Golf - Golf de la Grande Bastide (30 mars 2024)",
       year: "2024",
       description: "Participation au championnat final US Kids Golf à la Grande Bastide le 30 mars 2024",
       icon: Award,
@@ -92,7 +92,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/511618/golf-de-la-grande-bastide-tour-championship/results"
     },
     {
-      title: "US Kids Golf - Golf d'Opio Valbonne",
+      title: "US Kids Golf - Golf d'Opio Valbonne (29 mars 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf d'Opio Valbonne le 29 mars 2024",
       icon: Medal,
@@ -100,7 +100,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf Bastide de La Salette",
+      title: "US Kids Golf - Golf Bastide de La Salette (19 janvier 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf Bastide de La Salette le 19 janvier 2024",
       icon: Target,
@@ -108,7 +108,7 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
-      title: "US Kids Golf - Golf De Saint Donat",
+      title: "US Kids Golf - Golf De Saint Donat (12 janvier 2024)",
       year: "2024",
       description: "Tournoi US Kids Golf au Golf De Saint Donat le 12 janvier 2024",
       icon: Trophy,
