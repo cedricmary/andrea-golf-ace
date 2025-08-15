@@ -121,12 +121,6 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <div className="mt-8">
-              <Button variant="hero" size="lg">
-                <Heart className="w-5 h-5" />
-                Learn More
-              </Button>
-            </div>
           </div>
           
           {/* Stats Grid */}
