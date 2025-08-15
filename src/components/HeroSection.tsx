@@ -3,10 +3,30 @@ import { Trophy, Award, Target, Heart, User, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import heroImage from "/lovable-uploads/3b5254bb-66ee-4ffe-b669-177179e9b506.png";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
+  
+  // Gallery images for background rotation
+  const galleryImages = [
+    "/lovable-uploads/3b5254bb-66ee-4ffe-b669-177179e9b506.png",
+    "/lovable-uploads/1b679295-73b3-44d6-b62d-0f8fd1300ad1.png",
+    "/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png",
+    "/lovable-uploads/69b1010b-4dcd-4b60-ad2d-dd87b4208200.png",
+    "/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png"
+  ];
+  
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Rotate background images every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+    }, 5000);
+    
+    return () => clearInterval(interval);
+  }, [galleryImages.length]);
 
   const scrollToStats = () => {
     const statsSection = document.querySelector('[data-section="about"]');
@@ -64,8 +84,8 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-44 md:pt-60">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
+        style={{ backgroundImage: `url(${galleryImages[currentImageIndex]})` }}
       />
 
       {/* Language Switcher */}
