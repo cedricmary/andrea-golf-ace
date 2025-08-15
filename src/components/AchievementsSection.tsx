@@ -52,9 +52,9 @@ const AchievementsSection = () => {
     {
       title: "US Kids Golf - Golf de Roquebrune (24 août 2024)",
       year: "2024",
-      description: "Tournoi US Kids Golf au Golf de Roquebrune le 24 août 2024",
-      icon: Medal,
-      color: "trophy-silver",
+      description: "Victoire au tournoi US Kids Golf au Golf de Roquebrune le 24 août 2024",
+      icon: Trophy,
+      color: "championship-gold",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
@@ -222,12 +222,12 @@ const AchievementsSection = () => {
     {
       name: "US Kids Golf - Golf de Roquebrune",
       date: "24 août 2024",
-      position: "2ème",
+      position: "1er",
       category: "U10",
       location: "Golf de Roquebrune",
-      score: "Net 70",
-      medal: "Argent",
-      medalColor: "trophy-silver",
+      score: "N/A",
+      medal: "Or",
+      medalColor: "championship-gold",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: true
     },
