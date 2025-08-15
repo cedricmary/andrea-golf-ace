@@ -28,7 +28,7 @@ const HeroesSection = () => {
       achievements: "PGA Tour Champion",
       inspiration: "Style, charisma, and clutch performances",
       quote: "I want to be known as a guy who shows up when it matters most.",
-      image: rickyFowlerImage,
+      image: "/lovable-uploads/8c4afb98-1be5-42b5-9f75-c7d6e412e173.png",
       majorWins: 0,
       icon: Target,
       website: "https://rickiefowler.com/"
