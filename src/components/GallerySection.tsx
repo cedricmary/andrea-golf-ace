@@ -120,6 +120,11 @@ const GallerySection = () => {
       src: "/lovable-uploads/4cf0e98e-f83c-49a1-86b0-51241d9bd969.png",
       alt: "Andrea on luxury resort terrace overlooking golf course",
       caption: "Andrea enjoying the spectacular panoramic views from a luxury resort terrace overlooking the golf course and ocean"
+    },
+    {
+      src: "/lovable-uploads/f0601163-83ef-43a8-a12f-85365eecf55f.png",
+      alt: "Andrea and friend relaxing on the golf course with equipment",
+      caption: "Andrea and a fellow young golfer taking a break on the course during training session"
     }
   ];
 
