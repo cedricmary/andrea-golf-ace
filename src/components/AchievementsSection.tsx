@@ -138,6 +138,90 @@ const AchievementsSection = () => {
       verified: true
     },
     {
+      name: "US Kids Golf - Golf Club Aix Marseille",
+      date: "14 décembre 2024",
+      position: "3ème",
+      category: "U10",
+      location: "Golf Club Aix Marseille",
+      score: "Net 72",
+      medal: "Bronze",
+      medalColor: "trophy-bronze",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf de Roquebrune (Championnat final)",
+      date: "30 novembre 2024",
+      position: "1er",
+      category: "U10",
+      location: "Golf de Roquebrune",
+      score: "Net 65",
+      medal: "Or",
+      medalColor: "championship-gold",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf de Valgarde",
+      date: "20 octobre 2024",
+      position: "4ème",
+      category: "U10",
+      location: "Golf de Valgarde",
+      score: "Net 74",
+      medal: "Top 5",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf de Valgarde",
+      date: "19 octobre 2024",
+      position: "5ème",
+      category: "U10",
+      location: "Golf de Valgarde",
+      score: "Net 75",
+      medal: "Top 5",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf de Roquebrune",
+      date: "24 août 2024",
+      position: "2ème",
+      category: "U10",
+      location: "Golf de Roquebrune",
+      score: "Net 70",
+      medal: "Argent",
+      medalColor: "trophy-silver",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf Club Aix Marseille",
+      date: "7 juillet 2024",
+      position: "3ème",
+      category: "U10",
+      location: "Golf Club Aix Marseille",
+      score: "Net 73",
+      medal: "Bronze",
+      medalColor: "trophy-bronze",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513061/golf-club-aix-marseille/results",
+      verified: true
+    },
+    {
+      name: "Tournoi USKids Golf PACA",
+      date: "Juin 2024",
+      position: "4ème",
+      category: "U10",
+      location: "Golf de Valescure",
+      score: "Net 70",
+      medal: "Top 5",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: false
+    },
+    {
       name: "Trophée Jeunes Golfeurs U10 Finale Régionale",
       date: "Mai 2024",
       position: "2ème",
@@ -162,6 +246,42 @@ const AchievementsSection = () => {
       verified: true
     },
     {
+      name: "Grand Prix de Saint-Donat Jeunes",
+      date: "Avril 2024",
+      position: "2ème",
+      category: "Benjamin",
+      location: "Golf de Saint-Donat",
+      score: "148 (75+73)",
+      medal: "Argent",
+      medalColor: "trophy-silver",
+      link: "https://liguegolfpaca.org/grand-prix-de-saint-donat-2024/",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf de la Grande Bastide (Tour Championship)",
+      date: "30 mars 2024",
+      position: "6ème",
+      category: "U10",
+      location: "Golf de la Grande Bastide",
+      score: "Net 76",
+      medal: "Top 10",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/511618/golf-de-la-grande-bastide-tour-championship/results",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf d'Opio Valbonne",
+      date: "29 mars 2024",
+      position: "3ème",
+      category: "U10",
+      location: "Golf d'Opio Valbonne",
+      score: "Net 71",
+      medal: "Bronze",
+      medalColor: "trophy-bronze",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
       name: "Championnat Régional PACA Jeunes",
       date: "Mars 2024",
       position: "1er",
@@ -171,6 +291,30 @@ const AchievementsSection = () => {
       medal: "Or",
       medalColor: "championship-gold",
       link: "https://liguegolfpaca.org/competitions/competitions-jeunes/",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf Bastide de La Salette",
+      date: "19 janvier 2024",
+      position: "5ème",
+      category: "U10",
+      location: "Golf Bastide de La Salette",
+      score: "Net 77",
+      medal: "Top 5",
+      medalColor: "golf-green",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      verified: true
+    },
+    {
+      name: "US Kids Golf - Golf De Saint Donat",
+      date: "12 janvier 2024",
+      position: "2ème",
+      category: "U10",
+      location: "Golf De Saint Donat",
+      score: "Net 69",
+      medal: "Argent",
+      medalColor: "trophy-silver",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: true
     },
     {
@@ -195,30 +339,6 @@ const AchievementsSection = () => {
       medal: "Or",
       medalColor: "championship-gold",
       link: "https://andreamary.com/",
-      verified: false
-    },
-    {
-      name: "Grand Prix de Saint-Donat Jeunes",
-      date: "Avril 2024",
-      position: "2ème",
-      category: "Benjamin",
-      location: "Golf de Saint-Donat",
-      score: "148 (75+73)",
-      medal: "Argent",
-      medalColor: "trophy-silver",
-      link: "https://liguegolfpaca.org/grand-prix-de-saint-donat-2024/",
-      verified: true
-    },
-    {
-      name: "Tournoi USKids Golf PACA",
-      date: "Juin 2024",
-      position: "4ème",
-      category: "U10",
-      location: "Golf de Valescure",
-      score: "Net 70",
-      medal: "Top 5",
-      medalColor: "golf-green",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: false
     }
   ];
