@@ -125,6 +125,11 @@ const GallerySection = () => {
       src: "/lovable-uploads/f0601163-83ef-43a8-a12f-85365eecf55f.png",
       alt: "Andrea and friend relaxing on the golf course with equipment",
       caption: "Andrea and a fellow young golfer taking a break on the course during training session"
+    },
+    {
+      src: "/lovable-uploads/d8e98eae-b6db-4b4b-9ae1-167f8a289a98.png",
+      alt: "Andrea with father on the iconic Swilcan Bridge at St Andrews",
+      caption: "Andrea and his father standing on the legendary Swilcan Bridge at St Andrews Old Course, the most famous bridge in golf"
     }
   ];
 
