@@ -45,6 +45,16 @@ const GallerySection = () => {
       src: "/lovable-uploads/197c7c65-ca9a-4846-b0f6-ba5d578d87ff.png",
       alt: "Andrea concentrating during practice on the golf course",
       caption: "Andrea focused and determined during practice session on the course"
+    },
+    {
+      src: "/lovable-uploads/0f16fe89-af3b-4f05-aa7b-de4afb44ca62.png",
+      alt: "Andrea on the links course by the ocean",
+      caption: "Andrea braving the weather on a stunning links golf course by the ocean"
+    },
+    {
+      src: "/lovable-uploads/da42e502-dcd5-40ce-b2cb-11e118ce7112.png",
+      alt: "International youth golf gathering with flags from multiple countries",
+      caption: "Andrea with fellow young golfers from around the world at an international tournament"
     }
   ];
 
