@@ -49,8 +49,8 @@ const translations = {
     'hero.sponsor': 'Become a Sponsor',
     'hero.achievements': 'View Achievements',
 
-    // Achievements Section
-    'achievements.title': 'Achievements',
+    // Tournament Section
+    'achievements.title': 'Tournament',
     'achievements.subtitle': 'Tournament victories and notable performances',
     'achievements.trophee2024': 'Trophée Jeunes Golfeurs U10 2024',
     'achievements.trophee2024.desc': '2nd place in Boys category at the Regional Final (Golf de St Donat)',
@@ -193,8 +193,8 @@ const translations = {
     'hero.sponsor': 'Devenir Sponsor',
     'hero.achievements': 'Voir les Réalisations',
 
-    // Achievements Section
-    'achievements.title': 'Réalisations',
+    // Tournament Section
+    'achievements.title': 'Tournoi',
     'achievements.subtitle': 'Victoires en tournoi et performances notables',
     'achievements.trophee2024': 'Trophée Jeunes Golfeurs U10 2024',
     'achievements.trophee2024.desc': '2ème place en catégorie Garçons à la Finale Régionale (Golf de St Donat)',
