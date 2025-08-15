@@ -285,7 +285,7 @@ const AchievementsSection = () => {
     },
     {
       name: "Trophée Jeunes Golfeurs U10 Finale Régionale",
-      date: "18 mai 2024",
+      date: "septembre 2024",
       position: "2ème",
       category: "U10 Garçons",
       location: "Golf de St Donat",
