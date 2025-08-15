@@ -47,7 +47,7 @@ const AchievementsSection = () => {
       description: "Championnat final US Kids Golf au Golf de Roquebrune le 30 novembre 2024",
       icon: Trophy,
       color: "championship-gold",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513066/golf-de-roquebrune-tour-championship/results"
     },
     {
       title: "US Kids Golf - Golf de Valgarde (20 octobre 2024)",
@@ -208,7 +208,7 @@ const AchievementsSection = () => {
       score: "Net 65",
       medal: "Or",
       medalColor: "championship-gold",
-      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
+      link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513066/golf-de-roquebrune-tour-championship/results",
       verified: true
     },
     {
