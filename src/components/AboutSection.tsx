@@ -75,27 +75,10 @@ const AboutSection = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-golf bg-gradient-to-br from-golf-green/20 to-championship-gold/20 p-1">
                 <img 
-                  src="/lovable-uploads/1b679295-73b3-44d6-b62d-0f8fd1300ad1.png" 
-                  alt="Andrea - Golf Champion overlooking beautiful countryside" 
+                  src="/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png" 
+                  alt="Andrea - Golf Champion on the golf course" 
                   className="w-full h-full object-cover rounded-xl"
                 />
-              </div>
-              {/* Gallery Showcase - Section 2 (2 images) */}
-              <div className="mt-4 grid grid-cols-2 gap-2">
-                <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png" 
-                    alt="Andrea's perfect swing technique" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png" 
-                    alt="Andrea during tournament focus" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-championship-gold text-golf-green p-4 rounded-full shadow-lg">
                 <Heart className="w-6 h-6" />

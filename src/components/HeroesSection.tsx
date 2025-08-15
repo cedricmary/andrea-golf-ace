@@ -16,7 +16,7 @@ const HeroesSection = () => {
       achievements: "4 Major Championships",
       inspiration: "Power, precision, and mental strength combined",
       quote: "I've always said the harder you work, the luckier you get.",
-      image: "/lovable-uploads/69b1010b-4dcd-4b60-ad2d-dd87b4208200.png", // Gallery image - Section 3
+      image: "/lovable-uploads/400a362d-b769-418c-94ec-d39599b8b59c.png",
       majorWins: 4,
       icon: Star,
       website: "http://www.rorymcilroy.com/"
@@ -28,7 +28,7 @@ const HeroesSection = () => {
       achievements: "PGA Tour Champion",
       inspiration: "Style, charisma, and clutch performances",
       quote: "I want to be known as a guy who shows up when it matters most.",
-      image: "/lovable-uploads/0876263d-fffb-4d78-84b4-12cbdddd43fe.png", // Gallery image - Section 3
+      image: "/lovable-uploads/8c4afb98-1be5-42b5-9f75-c7d6e412e173.png",
       majorWins: 0,
       icon: Target,
       website: "https://rickiefowler.com/"

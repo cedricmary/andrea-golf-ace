@@ -8,10 +8,13 @@ import { useState, useEffect } from "react";
 const HeroSection = () => {
   const { t } = useLanguage();
   
-  // Gallery images for background rotation - Section 1 (2 images)
+  // Gallery images for background rotation
   const galleryImages = [
     "/lovable-uploads/3b5254bb-66ee-4ffe-b669-177179e9b506.png",
-    "/lovable-uploads/0f16fe89-af3b-4f05-aa7b-de4afb44ca62.png"
+    "/lovable-uploads/1b679295-73b3-44d6-b62d-0f8fd1300ad1.png",
+    "/lovable-uploads/6ae61128-27aa-498c-8e45-3b5d039287f7.png",
+    "/lovable-uploads/69b1010b-4dcd-4b60-ad2d-dd87b4208200.png",
+    "/lovable-uploads/fa7996ac-cf72-48ad-a56e-df0b95c350b2.png"
   ];
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

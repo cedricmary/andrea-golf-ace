@@ -51,24 +51,15 @@ const MyClubSection = () => {
           
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              {/* Gallery images - Section 4 (2 images) */}
               <img 
-                src="/lovable-uploads/d8fbb45b-62c6-4e30-a2c3-3e0fe05b54b5.png" 
-                alt="Andrea on golf course with scenic mountain views"
+                src="https://www.golfduluberon.com/wp-content/uploads/2021/10/DJI_0003-scaled.jpg" 
+                alt="Golf du Luberon aerial view"
                 className="w-full h-48 object-cover rounded-lg"
               />
               <img 
-                src="/lovable-uploads/197c7c65-ca9a-4846-b0f6-ba5d578d87ff.png" 
-                alt="Andrea concentrating during practice"
+                src="https://www.golfduluberon.com/wp-content/uploads/2021/09/DJI_0013-scaled.jpg" 
+                alt="Golf du Luberon course"
                 className="w-full h-48 object-cover rounded-lg"
-              />
-            </div>
-            <div className="space-y-4">
-              {/* Gallery image - Section 4 (1 image) */}
-              <img 
-                src="/lovable-uploads/da42e502-dcd5-40ce-b2cb-11e118ce7112.png" 
-                alt="International youth golf gathering"
-                className="w-full h-96 object-cover rounded-lg"
               />
             </div>
           </div>
