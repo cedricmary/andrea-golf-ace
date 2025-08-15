@@ -150,7 +150,7 @@ const HeroSection = () => {
             variant="hero" 
             size="lg" 
             className="text-lg px-8"
-            onClick={() => document.querySelector('[data-section="ligue"]')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('ligue')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <Trophy className="w-5 h-5" />
             Ligue PACA
