@@ -3,7 +3,7 @@ import { Trophy, Award, Target, Heart, User, MapPin, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -16,14 +16,7 @@ const HeroSection = () => {
   
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
-  // Rotate background images every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, [galleryImages.length]);
+  // No automatic rotation - images stay visible
 
   const scrollToStats = () => {
     const statsSection = document.querySelector('[data-section="about"]');
