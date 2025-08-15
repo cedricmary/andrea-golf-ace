@@ -71,8 +71,12 @@ const MyClubSection = () => {
             <Card className="overflow-hidden">
               <CardContent className="p-6">
                 <div className="text-center space-y-4">
-                  <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-white text-2xl font-bold">
-                    B
+                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/9bf951bb-e101-4eb5-8092-291b4c95d38e.png" 
+                      alt="Beru Family"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold">{t('club.management.member.name')}</h4>
