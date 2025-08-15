@@ -85,6 +85,41 @@ const GallerySection = () => {
       src: "/lovable-uploads/bd009998-1992-4722-903b-35ce7feb3c78.png",
       alt: "Andrea at Old Course Hotel St Andrews",
       caption: "Andrea at the famous Old Course Hotel St Andrews, overlooking the legendary golf course"
+    },
+    {
+      src: "/lovable-uploads/6c7a32a5-5da0-41cd-9453-e2eee22ff06b.png",
+      alt: "Andrea with father on Mediterranean golf course",
+      caption: "Andrea enjoying quality time with his father on a beautiful Mediterranean golf course"
+    },
+    {
+      src: "/lovable-uploads/c9a04897-42d3-4bbe-95f7-b7ac55322068.png",
+      alt: "Andrea with grandparents at tropical golf resort",
+      caption: "Andrea with his grandparents at a stunning tropical golf resort with palm trees and mountains"
+    },
+    {
+      src: "/lovable-uploads/5a4ee4f5-4237-4eca-bc51-85eff9ed7895.png",
+      alt: "Andrea practicing swing with mountain backdrop",
+      caption: "Andrea perfecting his swing against a dramatic mountain landscape in golden hour light"
+    },
+    {
+      src: "/lovable-uploads/5dee2c43-40d6-4705-807c-2942230c56b7.png",
+      alt: "Andrea with father on volcanic coastal course",
+      caption: "Andrea and his father on a spectacular volcanic coastal golf course with ocean cliffs"
+    },
+    {
+      src: "/lovable-uploads/6c6eca1b-40d6-482b-b243-abb2ce97af84.png",
+      alt: "Andrea enjoying refreshments at golf club terrace",
+      caption: "Andrea relaxing with tropical drinks at a luxury golf club terrace overlooking the course"
+    },
+    {
+      src: "/lovable-uploads/f1bd3fd0-3d95-4bb0-aad8-99b92d9a42a8.png",
+      alt: "Andrea playing on dramatic oceanside golf hole",
+      caption: "Andrea playing on one of the world's most scenic golf holes with dramatic ocean and cliff views"
+    },
+    {
+      src: "/lovable-uploads/4cf0e98e-f83c-49a1-86b0-51241d9bd969.png",
+      alt: "Andrea on luxury resort terrace overlooking golf course",
+      caption: "Andrea enjoying the spectacular panoramic views from a luxury resort terrace overlooking the golf course and ocean"
     }
   ];
 
