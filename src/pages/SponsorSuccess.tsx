@@ -38,6 +38,16 @@ const SponsorSuccess = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-golf-green/5 to-championship-gold/5 py-20">
+      {/* Navigation */}
+      <div className="absolute top-6 left-6 z-20">
+        <Button variant="outline" size="sm" asChild className="bg-golf-green border-golf-green text-white hover:bg-golf-green/90 hover:text-white shadow-lg">
+          <Link to="/">
+            <Home className="h-4 w-4 mr-2" />
+            {t('success.home')}
+          </Link>
+        </Button>
+      </div>
+
       {/* Language Switcher */}
       <div className="absolute top-6 right-6 z-20">
         <LanguageSwitcher />
