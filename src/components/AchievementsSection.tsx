@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Trophy, Medal, Award, Target, Calendar, ExternalLink, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import trophyImage from "@/assets/championship-trophy.jpg";
-import medalsImage from "@/assets/golf-medals.jpg";
 
 
 const AchievementsSection = () => {
@@ -335,22 +334,6 @@ const AchievementsSection = () => {
           </div>
         </div>
         
-        {/* Medals Gallery */}
-        <Card className="shadow-card">
-          <CardHeader>
-            <CardTitle className="text-2xl text-center">Medal Collection</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <img 
-              src={medalsImage} 
-              alt="Golf Medals Collection" 
-              className="w-full h-48 object-cover rounded-lg"
-            />
-            <p className="text-center text-muted-foreground mt-4">
-              A growing collection of medals and ribbons from various tournaments and competitions
-            </p>
-          </CardContent>
-        </Card>
 
         {/* Detailed Tournament Results & Medal Collection */}
         <div className="mt-16">
