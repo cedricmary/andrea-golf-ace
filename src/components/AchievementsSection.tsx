@@ -128,7 +128,7 @@ const AchievementsSection = () => {
     // 2025 Tournaments (Completed by August)
     {
       name: "Open Jeunes de Cannes-Mougins",
-      date: "Juillet 2025",
+      date: "Août 2025",
       position: "2ème",
       category: "U12",
       location: "Golf de Cannes-Mougins",
