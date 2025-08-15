@@ -94,7 +94,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-44 md:pt-60">
+    <section className="relative min-h-screen flex items-start justify-center overflow-hidden pt-32 md:pt-44">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
@@ -114,7 +114,7 @@ const HeroSection = () => {
           </div>
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-champion">
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-champion -mt-24 md:-mt-32">
           {t('hero.title')}
           <span className="block text-championship-gold text-4xl md:text-5xl mt-2">
             {t('hero.subtitle')}
