@@ -62,7 +62,7 @@ const AboutSection = () => {
       value: t('about.stats.club.value'), 
       icon: MapPin,
       color: "text-golf-green",
-      link: "https://www.golfduluberon.com/"
+      link: "https://andreamary.com/"
     }
   ];
 

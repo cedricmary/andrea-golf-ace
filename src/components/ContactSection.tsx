@@ -45,7 +45,7 @@ const ContactSection = () => {
           
           <Card 
             className="bg-white/10 backdrop-blur-sm border-white/20 text-center cursor-pointer hover:bg-white/15 transition-colors"
-            onClick={() => window.open('https://www.golfduluberon.com/', '_blank')}
+            onClick={() => window.open('https://andreamary.com/', '_blank')}
           >
             <CardHeader>
               <div className="mx-auto p-3 bg-championship-gold/20 rounded-full w-fit">

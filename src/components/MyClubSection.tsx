@@ -42,7 +42,7 @@ const MyClubSection = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Globe className="w-4 h-4 text-primary" />
-                  <span className="text-sm">www.golfduluberon.com</span>
+                  <span className="text-sm">andreamary.com</span>
                 </div>
               </div>
             </div>
