@@ -82,9 +82,9 @@ const AchievementsSection = () => {
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513061/golf-club-aix-marseille/results"
     },
     {
-      title: "US Kids Golf - Golf de la Grande Bastide (30 mars 2024)",
+      title: "US Kids Golf - Golf de la Grande Bastide (9 mars 2024)",
       year: "2024",
-      description: "Participation au championnat final US Kids Golf à la Grande Bastide le 30 mars 2024",
+      description: "Participation au championnat final US Kids Golf à la Grande Bastide le 9 mars 2024",
       icon: Award,
       color: "championship-gold",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/511618/golf-de-la-grande-bastide-tour-championship/results"
@@ -321,7 +321,7 @@ const AchievementsSection = () => {
     },
     {
       name: "US Kids Golf - Golf de la Grande Bastide (Tour Championship)",
-      date: "30 mars 2024",
+      date: "9 mars 2024",
       position: "6ème",
       category: "U10",
       location: "Golf de la Grande Bastide",
