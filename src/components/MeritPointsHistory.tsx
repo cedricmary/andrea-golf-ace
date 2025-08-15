@@ -10,18 +10,18 @@ const MeritPointsHistory = () => {
 
   // Mock historical data for Andrea's merit points
   const meritHistory = [
-    { month: "Sept 2023", points: 145.5, ranking: 85 },
-    { month: "Oct 2023", points: 167.2, ranking: 78 },
-    { month: "Nov 2023", points: 189.8, ranking: 72 },
-    { month: "Dec 2023", points: 210.4, ranking: 65 },
-    { month: "Jan 2024", points: 234.7, ranking: 58 },
-    { month: "Feb 2024", points: 256.3, ranking: 52 },
-    { month: "Mar 2024", points: 278.9, ranking: 47 },
-    { month: "Apr 2024", points: 301.5, ranking: 43 },
-    { month: "May 2024", points: 325.8, ranking: 38 },
-    { month: "Jun 2024", points: 342.1, ranking: 35 },
-    { month: "Jul 2024", points: 358.7, ranking: 32 },
-    { month: "Aug 2024", points: 375.2, ranking: 29 }
+    { month: "Sept 2023", points: 0.85, ranking: 150 },
+    { month: "Oct 2023", points: 1.12, ranking: 142 },
+    { month: "Nov 2023", points: 1.38, ranking: 135 },
+    { month: "Dec 2023", points: 1.65, ranking: 128 },
+    { month: "Jan 2024", points: 1.89, ranking: 120 },
+    { month: "Feb 2024", points: 2.05, ranking: 115 },
+    { month: "Mar 2024", points: 2.18, ranking: 110 },
+    { month: "Apr 2024", points: 2.28, ranking: 105 },
+    { month: "May 2024", points: 2.35, ranking: 102 },
+    { month: "Jun 2024", points: 2.42, ranking: 98 },
+    { month: "Jul 2024", points: 2.48, ranking: 95 },
+    { month: "Aug 2024", points: 2.55, ranking: 92 }
   ];
 
   const currentPoints = meritHistory[meritHistory.length - 1].points;
