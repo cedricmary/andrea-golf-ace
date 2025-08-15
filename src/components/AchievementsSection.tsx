@@ -36,9 +36,9 @@ const AchievementsSection = () => {
     {
       title: "US Kids Golf - Golf Club Aix Marseille (14 décembre 2024)",
       year: "2024",
-      description: "Tournoi US Kids Golf au Golf Club Aix Marseille le 14 décembre 2024",
-      icon: Medal,
-      color: "trophy-bronze",
+      description: "Victoire au tournoi US Kids Golf au Golf Club Aix Marseille le 14 décembre 2024",
+      icon: Trophy,
+      color: "championship-gold",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr"
     },
     {
@@ -190,12 +190,12 @@ const AchievementsSection = () => {
     {
       name: "US Kids Golf - Golf Club Aix Marseille",
       date: "14 décembre 2024",
-      position: "3ème",
+      position: "1er",
       category: "U10",
       location: "Golf Club Aix Marseille",
-      score: "Net 72",
-      medal: "Bronze",
-      medalColor: "trophy-bronze",
+      score: "N/A",
+      medal: "Or",
+      medalColor: "championship-gold",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-local-tour/509226/paca-fr",
       verified: true
     },
