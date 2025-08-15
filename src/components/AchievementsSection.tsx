@@ -60,8 +60,8 @@ const AchievementsSection = () => {
     {
       title: "US Kids Golf - Golf Club Aix Marseille (7 juillet 2024)",
       year: "2024",
-      description: "Participation au tournoi US Kids Golf organisé au Golf Club Aix Marseille le 7 juillet 2024",
-      icon: Trophy,
+      description: "5ème place au tournoi US Kids Golf organisé au Golf Club Aix Marseille le 7 juillet 2024",
+      icon: Award,
       color: "golf-green",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513061/golf-club-aix-marseille/results"
     },
@@ -234,12 +234,12 @@ const AchievementsSection = () => {
     {
       name: "US Kids Golf - Golf Club Aix Marseille",
       date: "7 juillet 2024",
-      position: "3ème",
+      position: "5ème",
       category: "U10",
       location: "Golf Club Aix Marseille",
-      score: "Net 73",
-      medal: "Bronze",
-      medalColor: "trophy-bronze",
+      score: "N/A",
+      medal: "Top 5",
+      medalColor: "golf-green",
       link: "https://tournaments.uskidsgolf.com/tournaments/local/find-tournament/513061/golf-club-aix-marseille/results",
       verified: true
     },
