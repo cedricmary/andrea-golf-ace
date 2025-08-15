@@ -300,135 +300,197 @@ const AchievementsSection = () => {
             </p>
           </div>
 
-          {/* Combined List of Achievements and Tournaments */}
-          <div className="space-y-4">
-            {/* First render tournament results */}
-            {tournaments.map((tournament, index) => {
-              const MedalIcon = getMedalIcon(tournament.medal);
-              return (
-                <Card 
-                  key={`tournament-${index}`} 
-                  className={`shadow-card hover:shadow-golf transition-all ${
-                    tournament.link ? 'cursor-pointer hover:scale-[1.02]' : ''
-                  } ${tournament.verified ? 'border-l-4 border-l-golf-green' : ''}`}
-                  {...(tournament.link && {
-                    onClick: () => window.open(tournament.link, '_blank')
-                  })}
-                >
-                  <CardContent className="p-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
-                      {/* Medal & Position */}
-                      <div className="lg:col-span-2 flex items-center gap-3">
-                        <div className={`p-3 rounded-full bg-${tournament.medalColor}/10`}>
-                          <MedalIcon className={`w-6 h-6 text-${tournament.medalColor}`} />
-                        </div>
-                        <div>
-                          <div className={`text-xl font-bold text-${tournament.medalColor}`}>
-                            {tournament.position}
-                          </div>
-                          <div className="text-xs text-muted-foreground">
-                            {tournament.medal}
-                          </div>
-                        </div>
-                      </div>
+          {/* Tournament Results Grouped by Year */}
+          <div className="space-y-8">
+            {/* Group tournaments by year */}
+            {(() => {
+              // Extract year from date and sort tournaments
+              const tournamentsWithYear = tournaments.map(tournament => {
+                let year = "2024"; // default
+                if (tournament.date.includes("2024")) year = "2024";
+                if (tournament.date.includes("2023")) year = "2023";
+                return { ...tournament, year };
+              });
 
-                      {/* Tournament Info */}
-                      <div className="lg:col-span-6">
-                        <div className="flex items-center gap-2 mb-1">
-                          <h4 className="font-semibold text-foreground">{tournament.name}</h4>
-                          {tournament.verified && (
-                            <Badge variant="secondary" className="text-xs bg-golf-green/10 text-golf-green">
-                              Verified
-                            </Badge>
-                          )}
-                          {tournament.link && (
-                            <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
-                          )}
-                        </div>
-                        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                          <span className="flex items-center gap-1">
-                            <Calendar className="w-3 h-3" />
-                            {tournament.date}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <MapPin className="w-3 h-3" />
-                            {tournament.location}
-                          </span>
-                          <span>Catégorie: {tournament.category}</span>
-                        </div>
-                      </div>
+              // Sort by date (most recent first)
+              const sortedTournaments = tournamentsWithYear.sort((a, b) => {
+                const getDateValue = (dateStr: string) => {
+                  if (dateStr.includes("Sept")) return 9;
+                  if (dateStr.includes("Août")) return 8;
+                  if (dateStr.includes("Juillet")) return 7;
+                  if (dateStr.includes("Juin")) return 6;
+                  if (dateStr.includes("Mai")) return 5;
+                  if (dateStr.includes("Avril")) return 4;
+                  if (dateStr.includes("Mars")) return 3;
+                  return 0;
+                };
+                return getDateValue(b.date) - getDateValue(a.date);
+              });
 
-                      {/* Score */}
-                      <div className="lg:col-span-4 text-right lg:text-left">
-                        <div className="text-lg font-semibold text-foreground">
-                          {tournament.score}
-                        </div>
-                      </div>
+              // Group by year
+              const groupedByYear = sortedTournaments.reduce((acc, tournament) => {
+                if (!acc[tournament.year]) acc[tournament.year] = [];
+                acc[tournament.year].push(tournament);
+                return acc;
+              }, {} as Record<string, typeof tournaments>);
+
+              // Render each year group
+              return Object.keys(groupedByYear)
+                .sort((a, b) => parseInt(b) - parseInt(a)) // Most recent year first
+                .map(year => (
+                  <div key={year} className="space-y-4">
+                    {/* Year Header */}
+                    <div className="flex items-center gap-4 mb-6">
+                      <Badge className="bg-golf-green/10 text-golf-green border-golf-green/20 px-4 py-2 text-lg">
+                        {year}
+                      </Badge>
+                      <div className="flex-1 h-px bg-border"></div>
                     </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
 
-            {/* Then render other achievements */}
-            {achievements.map((achievement, index) => {
-              const IconComponent = achievement.icon;
-              
-              return (
-                <Card 
-                  key={`achievement-${index}`} 
-                  className={`shadow-card hover:shadow-golf transition-all ${
-                    achievement.link ? 'cursor-pointer hover:scale-[1.02]' : ''
-                  }`}
-                  {...(achievement.link && {
-                    onClick: () => window.open(achievement.link, '_blank')
-                  })}
-                >
-                  <CardContent className="p-6">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
-                      {/* Icon & Achievement Type */}
-                      <div className="lg:col-span-2 flex items-center gap-3">
-                        <div className={`p-3 rounded-full bg-${achievement.color}/10`}>
-                          <IconComponent className={`w-6 h-6 text-${achievement.color}`} />
-                        </div>
-                        <div>
-                          <div className={`text-xl font-bold text-${achievement.color}`}>
-                            {achievement.year}
+                    {/* Tournaments for this year */}
+                    {groupedByYear[year].map((tournament, index) => {
+                      const MedalIcon = getMedalIcon(tournament.medal);
+                      return (
+                        <Card 
+                          key={`tournament-${year}-${index}`} 
+                          className={`shadow-card hover:shadow-golf transition-all ${
+                            tournament.link ? 'cursor-pointer hover:scale-[1.02]' : ''
+                          } ${tournament.verified ? 'border-l-4 border-l-golf-green' : ''}`}
+                          {...(tournament.link && {
+                            onClick: () => window.open(tournament.link, '_blank')
+                          })}
+                        >
+                          <CardContent className="p-6">
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                              {/* Medal & Position */}
+                              <div className="lg:col-span-2 flex items-center gap-3">
+                                <div className={`p-3 rounded-full bg-${tournament.medalColor}/10`}>
+                                  <MedalIcon className={`w-6 h-6 text-${tournament.medalColor}`} />
+                                </div>
+                                <div>
+                                  <div className={`text-xl font-bold text-${tournament.medalColor}`}>
+                                    {tournament.position}
+                                  </div>
+                                  <div className="text-xs text-muted-foreground">
+                                    {tournament.medal}
+                                  </div>
+                                </div>
+                              </div>
+
+                              {/* Tournament Info */}
+                              <div className="lg:col-span-6">
+                                <div className="flex items-center gap-2 mb-1">
+                                  <h4 className="font-semibold text-foreground">{tournament.name}</h4>
+                                  {tournament.verified && (
+                                    <Badge variant="secondary" className="text-xs bg-golf-green/10 text-golf-green">
+                                      Verified
+                                    </Badge>
+                                  )}
+                                  {tournament.link && (
+                                    <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
+                                  )}
+                                </div>
+                                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                                  <span className="flex items-center gap-1">
+                                    <Calendar className="w-3 h-3" />
+                                    {tournament.date}
+                                  </span>
+                                  <span className="flex items-center gap-1">
+                                    <MapPin className="w-3 h-3" />
+                                    {tournament.location}
+                                  </span>
+                                  <span>Catégorie: {tournament.category}</span>
+                                </div>
+                              </div>
+
+                              {/* Score */}
+                              <div className="lg:col-span-4 text-right lg:text-left">
+                                <div className="text-lg font-semibold text-foreground">
+                                  {tournament.score}
+                                </div>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      );
+                    })}
+                  </div>
+                ));
+            })()}
+          </div>
+
+          {/* Other Achievements Section */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+              <Badge className="mb-4 bg-trophy-bronze/10 text-trophy-bronze border-trophy-bronze/20">
+                Other Achievements
+              </Badge>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-champion">
+                Awards & Recognition
+              </h3>
+            </div>
+
+            <div className="space-y-4">
+              {/* Render other achievements */}
+              {achievements.map((achievement, index) => {
+                const IconComponent = achievement.icon;
+                
+                return (
+                  <Card 
+                    key={`achievement-${index}`} 
+                    className={`shadow-card hover:shadow-golf transition-all ${
+                      achievement.link ? 'cursor-pointer hover:scale-[1.02]' : ''
+                    }`}
+                    {...(achievement.link && {
+                      onClick: () => window.open(achievement.link, '_blank')
+                    })}
+                  >
+                    <CardContent className="p-6">
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                        {/* Icon & Achievement Type */}
+                        <div className="lg:col-span-2 flex items-center gap-3">
+                          <div className={`p-3 rounded-full bg-${achievement.color}/10`}>
+                            <IconComponent className={`w-6 h-6 text-${achievement.color}`} />
                           </div>
-                          <div className="text-xs text-muted-foreground">
-                            Achievement
+                          <div>
+                            <div className={`text-xl font-bold text-${achievement.color}`}>
+                              {achievement.year}
+                            </div>
+                            <div className="text-xs text-muted-foreground">
+                              Achievement
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Achievement Info */}
+                        <div className="lg:col-span-6">
+                          <div className="flex items-center gap-2 mb-1">
+                            <h4 className="font-semibold text-foreground">{achievement.title}</h4>
+                            {achievement.link && (
+                              <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
+                            )}
+                          </div>
+                          <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                            <span className="flex items-center gap-1">
+                              <Calendar className="w-3 h-3" />
+                              {achievement.year}
+                            </span>
+                            <span>Type: Achievement</span>
+                          </div>
+                        </div>
+
+                        {/* Description */}
+                        <div className="lg:col-span-4 text-right lg:text-left">
+                          <div className="text-lg font-semibold text-foreground">
+                            {achievement.description}
                           </div>
                         </div>
                       </div>
-
-                      {/* Achievement Info */}
-                      <div className="lg:col-span-6">
-                        <div className="flex items-center gap-2 mb-1">
-                          <h4 className="font-semibold text-foreground">{achievement.title}</h4>
-                          {achievement.link && (
-                            <ExternalLink className="w-4 h-4 text-golf-green opacity-60" />
-                          )}
-                        </div>
-                        <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                          <span className="flex items-center gap-1">
-                            <Calendar className="w-3 h-3" />
-                            {achievement.year}
-                          </span>
-                          <span>Type: Achievement</span>
-                        </div>
-                      </div>
-
-                      {/* Description */}
-                      <div className="lg:col-span-4 text-right lg:text-left">
-                        <div className="text-lg font-semibold text-foreground">
-                          {achievement.description}
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
           </div>
 
           {/* Legend */}
